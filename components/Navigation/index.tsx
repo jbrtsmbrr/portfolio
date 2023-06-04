@@ -47,7 +47,7 @@ const Menu = () => {
 const Navigation = () => {
   const [selected, setSelected] = useState<TMenu>({ name: "Home" });
   return (
-    <section className="sticky top-0 z-50 backdrop-blur-[6px]">
+    <section className="sticky top-0 z-50 backdrop-blur-[6px] xs:px-4">
       <div className="grid grid-cols-4 py-4 max-w-lg mx-auto md:max-w-2xl lg:max-w-3xl box-border items-center">
         <div>
           <p className="font-bold">Joe Bert</p>

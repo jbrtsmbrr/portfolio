@@ -77,10 +77,52 @@ const skills: SkillCardProp[] = [
     background: "rgba(0, 0, 0, 0.055)",
     type: "New/Exploring",
   },
+  {
+    imageUrl: "/assets/icons/icons8-flutter.svg",
+    label: "Flutter",
+    learning: false,
+    background: "rgba(0, 199, 255, 0.077)",
+    type: "Heard of",
+  },
+  {
+    imageUrl: "/assets/icons/icons8-jquery.svg",
+    label: "jQuery",
+    learning: false,
+    background: "rgba(110, 135, 184, 0.077)",
+    type: "Old",
+  },
+  {
+    imageUrl: "/assets/icons/icons8-nodejs.svg",
+    label: "Node JS",
+    learning: false,
+    background: "rgba(94, 170, 98.055, 0.077)",
+    type: "Old",
+  },
+  {
+    imageUrl: "/assets/icons/icons8-php.svg",
+    label: "PHP",
+    learning: false,
+    background: "rgba(110, 135, 184, 0.077)",
+    type: "Old",
+  },
+  {
+    imageUrl: "/assets/icons/icons8-redux.svg",
+    label: "Redux",
+    learning: false,
+    background: "rgba(132, 85, 192, 0.077)",
+    type: "Heard of",
+  },
+  {
+    imageUrl: "/assets/icons/icons8-sass.svg",
+    label: "Sass",
+    learning: false,
+    background: "rgba(255, 87, 139, 0.077)",
+    type: "Old",
+  },
 ];
 
 const HardSkills = () => {
-  const [filter, setFilter] = useState<TSkillType[]>([
+  const [filter, setFilter] = useState([
     "Current",
     "Heard of",
     "New/Exploring",
