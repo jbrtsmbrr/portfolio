@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 3s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
+.main:after {
+  content: "";
+  background-image: url("/assets/backgrounds/grid.svg");
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  filter: invert(1);
+}
