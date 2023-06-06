@@ -33,7 +33,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="mt-[80px]">
+    <section className="mt-[80px] px-4 xs:px-0">
       <div className="flex place-items-center jutify-between mb-8 gap-8">
         <div className="relative h-full">
           <div className="absolute h-1/2 w-full -top-1/3 -translate-y-1/3 z-negative">
@@ -59,7 +59,7 @@ const Projects = () => {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
         {projects.map((project) => (
           <div className="shadow-lg min-h-[200px] p-4 rounded-2xl bg-white">
             <div className="my-2">
