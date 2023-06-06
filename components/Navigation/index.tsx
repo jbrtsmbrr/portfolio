@@ -10,8 +10,8 @@ type TMenu = {
 const menu: TMenu[] = [
   { name: "Home" },
   { name: "Skills" },
-  { name: "Blogs" },
   { name: "Collaborations" },
+  { name: "Blogs" },
   { name: "Testimonials" },
   { name: "Contact me" },
 ]
