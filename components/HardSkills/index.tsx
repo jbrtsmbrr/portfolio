@@ -29,6 +29,13 @@ const skills: SkillCardProp[] = [
     type: "Current",
   },
   {
+    imageUrl: "/assets/icons/icons8-nodejs.svg",
+    label: "Node JS",
+    learning: false,
+    background: "rgba(94, 170, 98.055, 0.077)",
+    type: "Old",
+  },
+  {
     imageUrl: "/assets/icons/icons8-react-native.svg",
     label: "React",
     learning: false,
@@ -92,13 +99,6 @@ const skills: SkillCardProp[] = [
     type: "Old",
   },
   {
-    imageUrl: "/assets/icons/icons8-nodejs.svg",
-    label: "Node JS",
-    learning: false,
-    background: "rgba(94, 170, 98.055, 0.077)",
-    type: "Old",
-  },
-  {
     imageUrl: "/assets/icons/icons8-php.svg",
     label: "PHP",
     learning: false,
@@ -118,6 +118,13 @@ const skills: SkillCardProp[] = [
     learning: false,
     background: "rgba(255, 87, 139, 0.077)",
     type: "Old",
+  },
+  {
+    imageUrl: "/assets/icons/icons8-git.svg",
+    label: "Git",
+    learning: false,
+    background: "rgba(255, 65, 0, 0.066)",
+    type: "Current",
   },
 ];
 
@@ -140,7 +147,7 @@ const HardSkills = () => {
     }
   }
   return (
-    <section>
+    <section className="mt-[16px]">
       <div className="flex place-items-center jutify-between mb-8 md:gap-8">
         <div className="flex-1 space-y-4">
           <h1 className="font-bold">Hard Skills</h1>
