@@ -27,7 +27,7 @@ const Banner = () => {
           </div>
           <div className="flex gap-4 flex-col md:flex-row">
             <a href="https://www.linkedin.com/in/joe-bert-sembrero-0a7977198" target="_blank">
-              <button className="bg-blue-500 px-4 py-2 rounded-xl shadow-lg text-white text-sm hover:bg-blue-400 active:bg-blue-500">Let's Talk!</button>
+              <button className="bg-blue-500 px-4 py-2 rounded-xl shadow-lg text-white text-sm hover:bg-blue-400 active:bg-blue-500 w-full">Let's Talk!</button>
             </a>
             <a
               href="/assets/documents/JOE-BERT-SEMBRERO-2023-Verbose-NO_IMAGE.pdf"
