@@ -5,9 +5,15 @@ const Banner = () => {
     <section className="relative grid grid-cols-2 md:h-[480px] gap-4 px-4 xs:px-0">
       <div className="flex flex-col-reverse md:flex-col gap-4">
         <div className="md:absolute md:h-full md:-left-14 lg:-left-20 flex gap-4 md:flex-col justify-center">
-          <Image alt="github" src="/assets/icons/icons8-github.svg" width={28} height={28} />
-          <Image alt="github" src="/assets/icons/icons8-linkedin.svg" width={25} height={25} />
-          <Image alt="github" src="/assets/icons/icons8-facebook.svg" width={25} height={25} />
+          <a href="https://github.com/jbrtsmbrr" target="_blank">
+            <Image alt="github" src="/assets/icons/icons8-github.svg" width={28} height={28} />
+          </a>
+          <a href="https://www.linkedin.com/in/joe-bert-sembrero-0a7977198" target="_blank">
+            <Image alt="github" src="/assets/icons/icons8-linkedin.svg" width={25} height={25} />
+          </a>
+          <a href="https://www.messenger.com/t/100006549167056" target="_blank">
+            <Image alt="github" src="/assets/icons/icons8-facebook.svg" width={25} height={25} />
+          </a>
         </div>
         <div className="flex flex-col justify-center md:h-full gap-8">
           <div className="space-y-2">
@@ -16,11 +22,13 @@ const Banner = () => {
             </h1>
             <h3 className="font-medium text-gray-500 underline underline-offset-4 decoration-dotted">Frontend developer</h3>
             <p className="text-sm text-gray-400">
-              Currently, I am working as frontend developer at WebCast Technologies Inc. 🐱‍🏍
+              Currently, I am working as frontend developer at <a href="https://webcast-inc.com.ph/" target="_blank" className="hover:underline hover:underline-offset-4 hover:decoration-dotted">WebCast Technologies Inc.</a> 🐱‍🏍
             </p>
           </div>
           <div className="flex gap-4 flex-col md:flex-row">
-            <button className="bg-blue-500 px-4 py-2 rounded-xl shadow-lg text-white text-sm hover:bg-blue-400 active:bg-blue-500">Let's Talk!</button>
+            <a href="https://www.linkedin.com/in/joe-bert-sembrero-0a7977198" target="_blank">
+              <button className="bg-blue-500 px-4 py-2 rounded-xl shadow-lg text-white text-sm hover:bg-blue-400 active:bg-blue-500">Let's Talk!</button>
+            </a>
             <a
               href="/assets/documents/JOE-BERT-SEMBRERO-2023-Verbose-NO_IMAGE.pdf"
               download
