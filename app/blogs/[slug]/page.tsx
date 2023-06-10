@@ -14,10 +14,11 @@ const getBlogPost = (slug: string) => {
 
 export const generateStaticParams = () => {
   const blogs = getBlogsMetadata();
-  console.log(blogs.map(blog => ({ slug: blog.slug })))
-  return [
-    { slug: blogs.map(blog => blog.slug) }
-  ]
+  
+  return blogs.map(blog => ({ slug: blog.slug }))
+  // return [
+  //   { slug: blogs.map(blog => blog.slug) }
+  // ]
 }
 
 const BlogPost = (props: any) => {
