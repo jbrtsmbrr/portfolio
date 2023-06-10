@@ -50,7 +50,7 @@ const Navigation = () => {
     <section className="sticky top-0 z-50 backdrop-blur-[6px] px-4 sm:px-0">
       <div className="grid grid-cols-4 py-4 max-w-lg mx-auto md:max-w-2xl lg:max-w-3xl box-border items-center">
         <div>
-          <p className="font-bold">Joe Bert</p>
+          <Link href="/" className="font-bold">Joe Bert</Link>
         </div>
         <div className="col-span-3 ml-auto">
           {/* Large Screen Menu */}
