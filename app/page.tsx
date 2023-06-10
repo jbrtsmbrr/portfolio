@@ -1,9 +1,11 @@
 import Banner from "@/components/Banner";
 import HardSkills from "@/components/HardSkills"
+import Blogs from "@/components/Blogs";
 import Projects from "@/components/Projects";
 import Timeline from "@/components/Timeline";
 import Testimonials from "@/components/Testimonials";
 import Image from "next/image";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -13,9 +15,12 @@ export default function Home() {
 
       </section> */}
       <HardSkills />
+      <Blogs />
       {/* <Timeline /> */}
       <Testimonials />
-      <Projects />
+      {/* <Projects /> */}
+      <Contact />
+      {/* <Projects /> */}
     </div>
   )
 }
