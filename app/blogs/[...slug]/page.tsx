@@ -5,6 +5,7 @@ import matter from "gray-matter";
 import getBlogsMetadata from '@/components/__utils/getBlogsMetaData';
 
 const getBlogPost = (slug: string) => {
+  // const folder = "public/assets/blogs/";
   const folder = "blogs/";
   const file = `${folder}${slug}.md`;
   const content = fs.readFileSync(file, "utf8");
@@ -12,9 +13,9 @@ const getBlogPost = (slug: string) => {
   return gmResult;
 }
 
-export const generateStaticParams = () => {
-  const blogs = getBlogsMetadata();
-  console.log(blogs.map(blog => ({ slug: blog.slug })))
+export const generateStaticParams = async () => {
+  const blogs = await getBlogsMetadata();
+
   return [
     { slug: blogs.map(blog => blog.slug) }
   ]
