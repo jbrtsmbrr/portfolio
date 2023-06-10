@@ -106,6 +106,13 @@ const skills: SkillCardProp[] = [
     type: "Old",
   },
   {
+    imageUrl: "/assets/icons/icons8-mysql.svg",
+    label: "MySQL",
+    learning: false,
+    background: "rgba(0, 121, 107, 0.055)",
+    type: "Old",
+  },
+  {
     imageUrl: "/assets/icons/icons8-redux.svg",
     label: "Redux",
     learning: false,
@@ -153,7 +160,7 @@ const HardSkills = () => {
           <h1 className="font-bold">Hard Skills</h1>
           <p className="mt-3 text-gray-500">
             These are the skills I have at the moment. you will notice some of
-            them have lower opacity than others, that is because I'm still
+            them have dashed-border, that is because I'm still
             exploring those tools.
           </p>
           <SelectFilter value={filter} onSelectedChanged={handleSelectedChanged} />

@@ -9,7 +9,7 @@ const SkillCard = ({
 }: SkillCardProp) => {
   return (
     <div
-      className={`shadow-md w-full flex p-3 place-items-center gap-4 rounded-xl h-full bg-white ${learning ? "opacity-50" : ""
+      className={`shadow-md w-full flex p-3 place-items-center gap-4 rounded-xl h-full bg-white ${learning ? "border border-slate-300 border-dashed" : ""
         }`}
     >
       <span style={{ background }} className="p-1 rounded-lg min-h-full flex">
