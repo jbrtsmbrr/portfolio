@@ -5,7 +5,7 @@ import matter from "gray-matter";
 import getBlogsMetadata from '@/components/__utils/getBlogsMetaData';
 
 const getBlogPost = (slug: string) => {
-  const folder = "public/assets/blogs/";
+  const folder = "blogs/";
   const file = `${folder}${slug}.md`;
   const content = fs.readFileSync(file, "utf8");
   const gmResult = matter(content);

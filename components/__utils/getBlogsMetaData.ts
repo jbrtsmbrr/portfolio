@@ -2,7 +2,8 @@ import fs from "fs";
 import matter from "gray-matter";
 
 const getBlogsMetadata = () => {
-  const folder = "public/assets/blogs/";
+  // const folder = "public/assets/blogs/";
+  const folder = "blogs/";
   const files = fs.readdirSync(folder);
   const blogPosts = files.filter(file => file.endsWith(".md"));
   // const slugs = blogPosts.map(file => file.replace(".md", ""))
