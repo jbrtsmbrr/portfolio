@@ -35,6 +35,7 @@ const messages = [
 ];
 
 const Testimonials = () => {
+  console.log(roboto.className)
   return (
     <section className="mt-[80px] px-4 xs:px-0">
       <div className="relative flex place-items-center jutify-between mb-8 gap-8">
@@ -80,7 +81,7 @@ const Testimonials = () => {
               />
             </div>
             <div className="flex-1">
-              <pre className={`${roboto.className} whitespace-pre-wrap text-gray-700 indent-5`}>{item.message}</pre>
+              <p className={`${roboto.className} whitespace-pre-wrap text-gray-700 indent-8 text-sm`}>{item.message}</p>
             </div>
             <div className="flex items-center gap-4">
               <Image
