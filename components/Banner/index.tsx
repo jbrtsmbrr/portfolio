@@ -22,7 +22,7 @@ const Banner = () => {
             </h1>
             <h3 className="font-medium text-gray-500 underline underline-offset-4 decoration-dotted">Frontend developer</h3>
             <p className="text-sm text-gray-400">
-              Currently, I am working as frontend developer at <a href="https://webcast-inc.com.ph/" target="_blank" className="hover:underline hover:underline-offset-4 hover:decoration-dotted">WebCast Technologies Inc.</a> 🐱‍🏍
+              Currently, I am working as frontend developer at <a href="https://webcast-inc.com.ph/" target="_blank" className="hover:underline underline-offset-4 decoration-dotted">WebCast Technologies Inc.</a> 🐱‍🏍
             </p>
           </div>
           <div className="flex gap-4 flex-col md:flex-row">
