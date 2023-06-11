@@ -6,7 +6,7 @@ date: "2023-11-06"
 
 Have you ever seen this meme? 🤣
 
-![assets/blogs/images/toggle/meme](/assets/blogs/images/toggle/meme.png)
+![assets/blogs/images/toggle/meme](/assets/blogs/images/toggle/meme.PNG)
 
 
 
@@ -39,7 +39,7 @@ And now I want share it with you. 🔥
     export default Toggle;
     ```
 
-    ![assets/blogs/images/toggle/1](/assets/blogs/images/toggle/1.png)
+    ![assets/blogs/images/toggle/1](/assets/blogs/images/toggle/1.PNG)
 
     - Let's add basic styles:
 
@@ -53,7 +53,7 @@ And now I want share it with you. 🔥
     export default Toggle;
     ```
 
-    ![assets/blogs/images/toggle/2](/assets/blogs/images/toggle/2.png)
+    ![assets/blogs/images/toggle/2](/assets/blogs/images/toggle/2.PNG)
 
     - Add shadows
 
@@ -67,7 +67,7 @@ And now I want share it with you. 🔥
     export default Toggle;
     ```
 
-    ![assets/blogs/images/toggle/3](/assets/blogs/images/toggle/3.png)
+    ![assets/blogs/images/toggle/3](/assets/blogs/images/toggle/3.PNG)
 
 
 > That's it! We now have the basic shape of the toggle.
@@ -99,9 +99,9 @@ And now I want share it with you. 🔥
       If you watch the video above you notice that colors of the waves are changing depending on the state of the toggle.
       
       **Figure 1:** Waves are shaded with blue(s)
-      ![assets/blogs/images/toggle/wave-1](/assets/blogs/images/toggle/wave-1.png)
+      ![assets/blogs/images/toggle/wave-1](/assets/blogs/images/toggle/wave-1.PNG)
       **Figure 2:** Waves are shaded with black(s)
-      ![assets/blogs/images/toggle/wave-2](/assets/blogs/images/toggle/wave-2.png)
+      ![assets/blogs/images/toggle/wave-2](/assets/blogs/images/toggle/wave-2.PNG)
       
       
       Now that we have the necessary idea. <br>Let's make our hands dirty 🔥
@@ -145,7 +145,7 @@ And now I want share it with you. 🔥
       ```
 
       Now our components looks like this:
-      ![assets/blogs/images/toggle/4](/assets/blogs/images/toggle/4.png)
+      ![assets/blogs/images/toggle/4](/assets/blogs/images/toggle/4.PNG)
 
       As you can see the waves are blocking the main toggle container.<br>
       Let's add `overflow-hidden` class to our main toggle container to hide the unnecessary part of the circles.
@@ -168,7 +168,7 @@ And now I want share it with you. 🔥
       ```
 
       Now our components looks like this:
-      ![assets/blogs/images/toggle/5](/assets/blogs/images/toggle/5.png)
+      ![assets/blogs/images/toggle/5](/assets/blogs/images/toggle/5.PNG)
 
       Coding task 2: Changing the direction of the waves.
 
@@ -250,10 +250,10 @@ And now I want share it with you. 🔥
       Here we change the shades of the waves from blue to black depending on the value of the `mode`.
 
       light mode:
-      ![assets/blogs/images/toggle/5](/assets/blogs/images/toggle/5.png)
+      ![assets/blogs/images/toggle/5](/assets/blogs/images/toggle/5.PNG)
 
       Dark mode:
-      ![assets/blogs/images/toggle/6](/assets/blogs/images/toggle/6.png)
+      ![assets/blogs/images/toggle/6](/assets/blogs/images/toggle/6.PNG)
 
       **Current Toggle.jsx**
     
@@ -370,7 +370,7 @@ And now I want share it with you. 🔥
       export default Sun
       ```
       Now our `Sun.jsx` is done
-      ![assets/blogs/images/toggle/7](/assets/blogs/images/toggle/7.png)
+      ![assets/blogs/images/toggle/7](/assets/blogs/images/toggle/7.PNG)
 
       Next, Let's build the `Moon.jsx`
 
@@ -391,11 +391,11 @@ And now I want share it with you. 🔥
       ```
       
       Here's the `Moon.jsx`
-      ![assets/blogs/images/toggle/8](/assets/blogs/images/toggle/8.png)
+      ![assets/blogs/images/toggle/8](/assets/blogs/images/toggle/8.PNG)
 
       **Solving Task 2**<br>
       If you watch the meme video carefully you may see that the moon is showing from inside the sun. Like this:
-      ![assets/blogs/images/toggle/9](/assets/blogs/images/toggle/9.png)
+      ![assets/blogs/images/toggle/9](/assets/blogs/images/toggle/9.PNG)
       This is simple to do actually, we just need to position the moon at the very right position: Let's add the `translate-x-full` class to do it.
       
       **Moon.jsx**
@@ -578,18 +578,18 @@ And now I want share it with you. 🔥
       const Stars = () => {
         return (
           <div className="relative h-1/2 w-full">
-            <img className="absolute top-2 left-3.5" alt="star" src="icons8-star-24.png" width={8} height={8} />
-            <img className="absolute top-4 left-1.5" alt="star" src="icons8-star-24.png" width={4} height={4} />
-            <img className="absolute top-6 left-4" alt="star" src="icons8-star-24.png" width={3} height={3} />
-            <img className="absolute bottom-2 left-3" alt="star" src="icons8-star-24.png" width={1} height={1} />
-            <img className="absolute bottom-1 left-5" alt="star" src="icons8-star-24.png" width={1} height={1} />
+            <img className="absolute top-2 left-3.5" alt="star" src="icons8-star-24.PNG" width={8} height={8} />
+            <img className="absolute top-4 left-1.5" alt="star" src="icons8-star-24.PNG" width={4} height={4} />
+            <img className="absolute top-6 left-4" alt="star" src="icons8-star-24.PNG" width={3} height={3} />
+            <img className="absolute bottom-2 left-3" alt="star" src="icons8-star-24.PNG" width={1} height={1} />
+            <img className="absolute bottom-1 left-5" alt="star" src="icons8-star-24.PNG" width={1} height={1} />
 
-            <img className="absolute top-3 left-8" alt="star" src="icons8-star-24.png" width={1} height={1} />
-            <img className="absolute top-5 left-7" alt="star" src="icons8-star-24.png" width={1} height={1} />
-            <img className="absolute bottom-2 left-8" alt="star" src="icons8-star-24.png" width={4} height={4} />
-            <img className="absolute bottom-4 left-10" alt="star" src="icons8-star-24.png" width={1} height={1} />
+            <img className="absolute top-3 left-8" alt="star" src="icons8-star-24.PNG" width={1} height={1} />
+            <img className="absolute top-5 left-7" alt="star" src="icons8-star-24.PNG" width={1} height={1} />
+            <img className="absolute bottom-2 left-8" alt="star" src="icons8-star-24.PNG" width={4} height={4} />
+            <img className="absolute bottom-4 left-10" alt="star" src="icons8-star-24.PNG" width={1} height={1} />
 
-            <img className="absolute top-3 left-10" alt="star" src="icons8-star-24.png" width={8} height={8} />
+            <img className="absolute top-3 left-10" alt="star" src="icons8-star-24.PNG" width={8} height={8} />
           </div>
         )
       }
@@ -716,9 +716,9 @@ And now I want share it with you. 🔥
       Here's what we created so far:
 
       _Day mode_
-      ![assets/blogs/images/toggle/10](/assets/blogs/images/toggle/10.png)
+      ![assets/blogs/images/toggle/10](/assets/blogs/images/toggle/10.PNG)
       _Dark mode_
-      ![assets/blogs/images/toggle/11](/assets/blogs/images/toggle/11.png)
+      ![assets/blogs/images/toggle/11](/assets/blogs/images/toggle/11.PNG)
 
 
 5.  **Transitions:** Something's missing right?
