@@ -30,7 +30,7 @@ const Banner = () => {
               <button className="bg-blue-500 px-4 py-2 rounded-xl shadow-lg text-white text-sm hover:bg-blue-400 active:bg-blue-500 w-full">Let's Talk!</button>
             </a>
             <a
-              href="/assets/documents/JOE-BERT-SEMBRERO-2023-Verbose-NO_IMAGE.pdf"
+              href="/assets/documents/JOE-BERT-SEMBRERO-2023-RESUME.pdf"
               download
               style={{ color: "inherit", textDecoration: "none" }}
             ><button className="bg-gray-200 px-4 py-2 rounded-xl text-gray-500 border text-sm hover:bg-gray-100 active:bg-gray-200 w-full">Download Resume</button></a>
