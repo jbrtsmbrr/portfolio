@@ -14,7 +14,7 @@ Here's the full video: <a href="https://www.linkedin.com/posts/fawad-kamal-0b369
 
 After watching this, I had the idea to attempt doing the UI in the video myself.
 Guess what, I was successful. Yay! 🎉🥳
-And now I want share it with you. 🔥
+And now I want to share it with you. 🔥
 
 
 ### What we're going to use?
