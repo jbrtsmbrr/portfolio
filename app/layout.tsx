@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} bg-slate-50 main h-auto`}>
+      <body className={`${roboto.className} relative bg-slate-50 main h-auto`}>
         <Navigation />
         {children}
       </body>
