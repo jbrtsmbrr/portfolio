@@ -728,7 +728,7 @@ And now I want to share it with you. 🔥
     **Waves.jsx**
 
     ```jsx
-    const Waves = ({ mode }: { mode: string }) => {
+    const Waves = ({ mode }) => {
       return (
         <div className={`/* other classes... */ transition duration-700 ease-in-out`}>
           // Waves...
