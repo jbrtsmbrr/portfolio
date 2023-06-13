@@ -50,7 +50,7 @@ const Navigation = () => {
   const [mode, setMode] = useState<TMode>(() => {
     let localTheme: TMode = "light"
     if (typeof window !== undefined) {
-      localTheme = localStorage.getItem("theme") as TMode || "light";
+      localTheme = window.localStorage.getItem("theme") as TMode || "light";
     }
     return localTheme;
   });
@@ -62,7 +62,7 @@ const Navigation = () => {
       document.documentElement.classList.remove("dark");
     }
 
-    localStorage.setItem("theme", mode);
+    window.localStorage.setItem("theme", mode);
   }, [mode])
 
   return (
