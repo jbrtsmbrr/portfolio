@@ -72,14 +72,14 @@ const Testimonials = () => {
         </div> */}
         <div className="flex-1 text-right">
           <h1 className="font-bold">Testimonials</h1>
-          <p className="mt-3 text-gray-500">
+          <p className="mt-3 text-gray-500 dark:text-gray-400">
             These people were my colleagues in my previous and current jobs.<br />Here are the things they say about me:
           </p>
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {messages.map((item, index) => (
-          <div className="flex flex-col-reverse shadow-lg rounded-2xl py-4 px-6 space-y-4 bg-slate-50">
+          <div className="transition duration-700 flex flex-col-reverse shadow-lg rounded-2xl py-4 px-6 space-y-4 bg-slate-50 dark:bg-slate-900 dark:shadow-xl">
             <div className="mt-6">
               <Image
                 alt={`company-${index}`}
@@ -90,7 +90,7 @@ const Testimonials = () => {
               />
             </div>
             <div className="flex-1">
-              <p className={`${roboto.className} whitespace-pre-wrap text-gray-700 indent-8 text-sm`}>{item.message}</p>
+              <p className={`transition duration-700 ${roboto.className} whitespace-pre-wrap text-gray-700 dark:text-gray-400 indent-8 text-sm`}>{item.message}</p>
             </div>
             <div className="flex items-center gap-4">
               <Image
@@ -101,10 +101,10 @@ const Testimonials = () => {
                 className="rounded-full"
               />
               <div>
-                <span className="block text-sm font-bold hover:underline hover:underline-offset-4 hover:decoration-dotted">
+                <span className="block text-sm font-bold hover:underline hover:underline-offset-4 hover:decoration-dotted dark:text-gray-100">
                   <a href={item.link} target="_blank">{item.name}</a>
                 </span>
-                <span className="text-sm text-gray-600">{item.position}</span>
+                <span className="text-sm text-gray-600 dark:text-gray-500">{item.position}</span>
               </div>
             </div>
           </div>
