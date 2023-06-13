@@ -46,9 +46,12 @@ const Menu = () => {
 
 const Navigation = () => {
   const [selected, setSelected] = useState<TMenu>({ name: "Home" });
-  
+
   const [mode, setMode] = useState<TMode>(() => {
-    const localTheme: TMode = localStorage.getItem("theme") as TMode || "light";
+    let localTheme: TMode = "light"
+    if (typeof window !== undefined) {
+      localTheme = localStorage.getItem("theme") as TMode || "light";
+    }
     return localTheme;
   });
 
