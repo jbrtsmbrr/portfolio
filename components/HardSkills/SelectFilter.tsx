@@ -14,7 +14,7 @@ const SelectFilter = ({ value, onSelectedChanged }: TSelectedFilter) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div>
+    <div className="relative flex justify-end">
       <button
         onClick={() => setOpen((prevOpen) => !prevOpen)}
         id="dropdownHelperButton"
@@ -42,10 +42,10 @@ const SelectFilter = ({ value, onSelectedChanged }: TSelectedFilter) => {
       <div
         id="dropdownHelper"
         className={`${open ? "block" : "hidden"
-          } absolute z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600`}
+          } absolute top-12 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600`}
       >
         <ul
-          className="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200"
+          className="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200 text-left"
           aria-labelledby="dropdownHelperButton"
         >
           {skillOptions.map((opt, index) => (
