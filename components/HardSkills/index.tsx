@@ -168,7 +168,7 @@ const HardSkills = () => {
         <div className="max-[600px]:hidden">
           <Image
             alt="learning"
-            src="/assets/illustrations/3d-casual-life-text-program-on-computer-screen.png"
+            src="/assets/illustrations/casual-life-3d-notebook-with-glasses-and-pencil.png"
             width={250}
             height={250}
           />
