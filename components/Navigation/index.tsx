@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useLayoutEffect } from 'react'
 import ColorMode, { TMode } from './ColorMode';
 
 type TMenu = {
@@ -47,13 +47,13 @@ const Menu = () => {
 const Navigation = () => {
   const [selected, setSelected] = useState<TMenu>({ name: "Home" });
 
-  const [mode, setMode] = useState<TMode>(() => {
+  const [mode, setMode] = useState<TMode>("light");
+
+  useLayoutEffect(() => {
     let localTheme: TMode = "light"
-    if (typeof window != "undefined") {
-      localTheme = window.localStorage.getItem("theme") as TMode || "light";
-    }
-    return localTheme;
-  });
+    localTheme = window.localStorage.getItem("theme") as TMode || "light";
+    setMode(localTheme);
+  }, [])
 
   useEffect(() => {
     if (mode === "dark") {
