@@ -32,10 +32,19 @@ const messages = [
     message:
       `I haven't had a problem with him when assigning tasks and meeting deadlines. He always applies the best practices and up-to-date solutions to every task. You won't be disappointed when you get to work with him. He cooperates well in team discussions and communicates when problems arise. He is always willing to help, accepts challenges, and works professionally.\n\nI wouldn't hesitate to recommend or work with him again.`,
   },
+  {
+    name: "Mc Daryl Jumawid",
+    position: "Software QA Engineer",
+    image: {
+      person: "/assets/persons/daryl.jpg",
+      company: "/assets/logos/webcast.png",
+    },
+    message: `With the implementation he has done based on the project requirements, its clear that he goes beyond the boundaries of the requirement and finds the best way to go outside of the box for a more effective way of doing the project ask.\n\nIt was fun and easy working with him as I can communicate issues with him clearly which results to faster way on resolving system issues.`
+  }
 ];
 
 const Testimonials = () => {
-  console.log(roboto.className)
+
   return (
     <section className="mt-[80px] px-4 xs:px-0">
       <div className="relative flex place-items-center jutify-between mb-8 gap-8">
@@ -70,8 +79,8 @@ const Testimonials = () => {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {messages.map((item, index) => (
-          <div className="flex flex-col-reverse shadow-lg rounded-2xl py-4 px-6 space-y-8 bg-slate-50">
-            <div>
+          <div className="flex flex-col-reverse shadow-lg rounded-2xl py-4 px-6 space-y-4 bg-slate-50">
+            <div className="mt-6">
               <Image
                 alt={`company-${index}`}
                 src={item.image.company}
