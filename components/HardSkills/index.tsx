@@ -155,10 +155,10 @@ const HardSkills = () => {
   }
   return (
     <section className="mt-[16px] px-4 xs:px-0">
-      <div className="flex place-items-center jutify-between mb-8 md:gap-8">
+      <div className="flex flex-row-reverse place-items-center jutify-between mb-8 md:gap-8">
         <div className="flex-1 space-y-4">
-          <h1 className="font-bold">Hard Skills</h1>
-          <p className="mt-3 text-gray-500">
+          <h1 className="font-bold text-right">Hard Skills</h1>
+          <p className="mt-3 text-gray-500 text-right dark:text-gray-400">
             These are the skills I have at the moment. you will notice some of
             them have dashed-border, that is because I'm still
             exploring those tools.
