@@ -38,8 +38,8 @@ module.exports = {
       ...defaultTheme.screens,
     },
   },
-
   plugins: [
     require('@tailwindcss/typography'),
   ],
+  darkMode: "class"
 };
