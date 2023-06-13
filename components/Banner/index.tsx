@@ -20,8 +20,8 @@ const Banner = () => {
             <h1 className="font-bold text-3xl">
               Hi, I'm Joe Bert
             </h1>
-            <h3 className="font-medium text-gray-500 underline underline-offset-4 decoration-dotted dark:text-gray-400">Frontend Developer</h3>
-            <p className="text-sm text-gray-400 dark:text-gray-500">
+            <h3 className="font-medium text-gray-500 underline underline-offset-4 decoration-dotted dark:text-gray-300">Frontend Developer</h3>
+            <p className="text-sm text-gray-400 dark:text-gray-400">
               Currently, I am working as frontend developer at <a href="https://webcast-inc.com.ph/" target="_blank" className="hover:underline underline-offset-4 decoration-dotted">WebCast Technologies Inc.</a> 🐱‍🏍
             </p>
           </div>
