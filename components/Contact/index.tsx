@@ -8,14 +8,14 @@ const Contact = () => {
       <div className="text-center space-y-2">
         <h4 className="font-bold text-lg">Contact me</h4>
         <h1 className="font-semibold text-3xl">Ask a question</h1>
-        <p className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident recusandae vel autem molestias adipisci amet beatae accusamus corrupti voluptatum nisi, modi cupiditate ipsa. Culpa quas sint maiores. Maxime, ad amet!</p>
+        <p className="text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident recusandae vel autem molestias adipisci amet beatae accusamus corrupti voluptatum nisi, modi cupiditate ipsa. Culpa quas sint maiores. Maxime, ad amet!</p>
       </div>
       <div className="relative grid grid-cols-2 gap-4 items-center">
         <div className="md:col-span-1 col-span-2">
           <div className="bg-slate-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 shadow-lg p-4">
-            <h1 className="font-semibold text-xl text-gray-500 p-2">Say something</h1>
-            <input type="text" placeholder="Email" className=" w-full flex rounded-lg mt-2 p-3 text-sm text-gray-500 outline-0 shadow-2xl" />
-            <textarea placeholder="Message" className="w-full flex rounded-lg h-[200px] mt-2 p-3 text-sm text-gray-500 outline-0 shadow-2xl" />
+            <h1 className="font-semibold text-xl text-gray-400 p-2">Say something</h1>
+            <input type="text" placeholder="Email" className="dark:bg-gray-700 dark:text-gray-400 w-full flex rounded-lg mt-2 p-3 text-sm text-gray-500 outline-0 shadow-2xl" />
+            <textarea placeholder="Message" className="dark:bg-gray-700 dark:text-gray-400 w-full flex rounded-lg h-[200px] mt-2 p-3 text-sm text-gray-500 outline-0 shadow-2xl" />
             <button className="w-full mt-2 py-3 bg-blue-500 text-white rounded-lg shadow-md text-xs">Submit</button>
           </div>
         </div>
