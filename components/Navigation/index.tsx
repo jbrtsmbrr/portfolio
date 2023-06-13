@@ -1,8 +1,8 @@
 "use client";
 
 import Link from 'next/link'
-import React, { useState } from 'react'
-import ColorMode from './ColorMode';
+import React, { useState, useEffect } from 'react'
+import ColorMode, { TMode } from './ColorMode';
 
 type TMenu = {
   name: String
@@ -46,6 +46,22 @@ const Menu = () => {
 
 const Navigation = () => {
   const [selected, setSelected] = useState<TMenu>({ name: "Home" });
+  
+  const [mode, setMode] = useState<TMode>(() => {
+    const localTheme: TMode = localStorage.getItem("theme") as TMode || "light";
+    return localTheme;
+  });
+
+  useEffect(() => {
+    if (mode === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+
+    localStorage.setItem("theme", mode);
+  }, [mode])
+
   return (
     <section className="sticky top-0 z-50 backdrop-blur-[6px] px-4 sm:px-0">
       <div className="grid grid-cols-4 py-4 max-w-lg mx-auto md:max-w-2xl lg:max-w-3xl box-border items-center">
@@ -64,7 +80,7 @@ const Navigation = () => {
             ))}
             <li>
               {/* <Image alt="dark-mode" src="/assets/icons/icons8-dark-mode-48.png" width={24} height={24} /> */}
-              <ColorMode />
+              <ColorMode mode={mode} toggleMode={setMode} />
             </li>
           </ul>
           {/* Small Screen Menu */}
@@ -73,7 +89,7 @@ const Navigation = () => {
               <Menu />
             </li>
             <li>
-              <ColorMode />
+              <ColorMode mode={mode} toggleMode={setMode} />
             </li>
           </ul>
         </div>
