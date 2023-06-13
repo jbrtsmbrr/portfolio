@@ -20,8 +20,8 @@ const Banner = () => {
             <h1 className="font-bold text-3xl">
               Hi, I'm Joe Bert
             </h1>
-            <h3 className="font-medium text-gray-500 underline underline-offset-4 decoration-dotted">Frontend developer</h3>
-            <p className="text-sm text-gray-400">
+            <h3 className="font-medium text-gray-500 underline underline-offset-4 decoration-dotted dark:text-gray-400">Frontend Developer</h3>
+            <p className="text-sm text-gray-400 dark:text-gray-500">
               Currently, I am working as frontend developer at <a href="https://webcast-inc.com.ph/" target="_blank" className="hover:underline underline-offset-4 decoration-dotted">WebCast Technologies Inc.</a> 🐱‍🏍
             </p>
           </div>
@@ -33,7 +33,7 @@ const Banner = () => {
               href="/assets/documents/JOE-BERT-SEMBRERO-2023-RESUME.pdf"
               download
               style={{ color: "inherit", textDecoration: "none" }}
-            ><button className="bg-gray-200 px-4 py-2 rounded-xl text-gray-500 border text-sm hover:bg-gray-100 active:bg-gray-200 w-full">Download Resume</button></a>
+            ><button className="px-4 py-2 rounded-xl text-gray-600 border border-dashed border-gray-400  dark:text-gray-400 text-sm hover:bg-gray-100 dark:hover:bg-slate-800 active:bg-gray-200 active:dark:bg-slate-900 w-full">Download Resume</button></a>
 
           </div>
         </div>
