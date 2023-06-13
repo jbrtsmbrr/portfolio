@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} relative bg-slate-50 main h-auto`}>
+      <body className={`${roboto.className} relative bg-slate-50 main h-auto transition duration-700 after:invert dark:after:invert-0 dark:bg-slate-900 dark:text-slate-200`}>
         <Navigation />
         {children}
       </body>
