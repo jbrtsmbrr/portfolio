@@ -40,9 +40,9 @@ const Banner = () => {
       </div>
       <div className="relative h-full lg:-right-32">
         <div className="absolute h-1/2 w-full top-1/3 -translate-y-1/3 z-negative">
-          <div className="absolute mix-blend-multiply top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full filter blur-3xl opacity-70 animate-grow"></div>
-          <div className="absolute mix-blend-multiply top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full filter blur-3xl opacity-70 animate-grow animtation-delay-2000"></div>
-          <div className="absolute mix-blend-multiply top-8 -left-0 w-72 h-72 bg-pink-300 rounded-full filter blur-3xl opacity-70 animate-grow animation-delay-4000"></div>
+          <div className="absolute mix-blend-multiply top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full filter blur-3xl opacity-70 dark:opacity-30 animate-grow"></div>
+          <div className="absolute mix-blend-multiply top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full filter blur-3xl opacity-70 dark:opacity-30 animate-grow animtation-delay-2000"></div>
+          <div className="absolute mix-blend-multiply top-8 -left-0 w-72 h-72 bg-pink-300 rounded-full filter blur-3xl opacity-70 dark:opacity-30 animate-grow animation-delay-4000"></div>
         </div>
         <Image alt="me" src="/assets/illustrations/3d-casual-life-young-man-sitting-with-laptop-and-waving.png" width={200} height={200} className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 hidden md:block" />
       </div>
