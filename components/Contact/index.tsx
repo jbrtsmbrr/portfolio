@@ -23,9 +23,9 @@ const Contact = () => {
           <Image alt="spaceship" src="/assets/illustrations/3d-casual-life-convert-megaphone.png" width={250} height={250}
             className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 -rotate-12 md:block hidden" />
           <div className="absolute top-0 right-0 z-negative">
-            <div className="absolute mix-blend-multiply -top-12 right-0 w-72 h-72 bg-blue-300 rounded-full filter blur-3xl opacity-70 animate-grow"></div>
-            <div className="absolute mix-blend-multiply top-10 right-12 w-72 h-72 bg-violet-400 rounded-full filter blur-3xl opacity-90 animate-grow animtation-delay-2000"></div>
-            <div className="absolute mix-blend-multiply md:top-32 md:-left-32 top-8 -left-12 w-72 h-72 bg-pink-300 rounded-full filter blur-3xl opacity-70 animate-grow animation-delay-4000"></div>
+            <div className="absolute mix-blend-multiply -top-12 right-0 w-72 h-72 bg-blue-300 rounded-full filter blur-3xl opacity-70 dark:opacity-30 animate-grow"></div>
+            <div className="absolute mix-blend-multiply top-10 right-12 w-72 h-72 bg-violet-400 rounded-full filter blur-3xl opacity-90 dark:opacity-40 animate-grow animtation-delay-2000"></div>
+            <div className="absolute mix-blend-multiply md:top-32 md:-left-32 top-8 -left-16 w-72 h-72 bg-pink-300 rounded-full filter blur-3xl opacity-70 dark:opacity-30 animate-grow animation-delay-4000"></div>
           </div>
         </div>
       </div>

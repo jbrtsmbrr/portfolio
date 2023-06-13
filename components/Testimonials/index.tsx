@@ -50,9 +50,9 @@ const Testimonials = () => {
       <div className="relative flex place-items-center jutify-between mb-8 gap-8">
         <div className="relative h-full">
           <div className="absolute h-1/2 w-full -top-1/3 -translate-y-1/3 z-negative">
-            <div className="absolute mix-blend-multiply top-0 -right-9 w-72 h-72 bg-blue-300 rounded-full filter blur-3xl opacity-70 animate-grow"></div>
-            <div className="absolute mix-blend-multiply top-0 -right-4 w-72 h-72 bg-gray-200 rounded-full filter blur-3xl opacity-70 animate-grow animtation-delay-2000"></div>
-            <div className="absolute mix-blend-multiply top-12 -left-12 w-72 h-72 bg-pink-300 rounded-full filter blur-3xl opacity-70 animate-grow animation-delay-4000"></div>
+            <div className="absolute mix-blend-multiply top-0 -right-9 w-72 h-72 bg-blue-300 rounded-full filter blur-3xl opacity-70 dark:opacity-30 animate-grow"></div>
+            <div className="absolute mix-blend-multiply top-0 -right-4 w-72 h-72 bg-gray-200 rounded-full filter blur-3xl opacity-70 dark:opacity-20 animate-grow animtation-delay-2000"></div>
+            <div className="absolute mix-blend-multiply top-12 -left-12 w-72 h-72 bg-pink-300 rounded-full filter blur-3xl opacity-70 dark:opacity-30 animate-grow animation-delay-4000"></div>
           </div>
           <div className="max-[600px]:hidden -rotate-12">
             <Image
