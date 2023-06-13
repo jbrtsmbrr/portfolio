@@ -26,7 +26,7 @@ const Blog = () => {
         <div className="flex-1 text-center">
           <h1 className="font-bold text-lg">Blogs</h1>
           <h1 className="font-bold text-3xl">Check it out!</h1>
-          <p className="mt-3 text-gray-500">
+          <p className="mt-3 text-gray-500 dark:text-gray-400">
             These are collections of some of the knowledge I have accumulated over the course of my whole career.
             These postings enable me to remember what I have learned.
           </p>
@@ -34,10 +34,10 @@ const Blog = () => {
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-2">
         {blogs.map(blog => (
-          <div className="p-4 shadow-lg rounded-lg bg-slate-50 border border-slate-300 border-dashed">
-            <Link href={`blogs/${blog.slug}`} className="hover:underline underline-offset-4 decoration-dotted font-bold text-purple-500">{blog.title}</Link>
-            <p className="text-gray-600">{blog.subtitle}</p>
-            <p className="text-sm">{blog.date}</p>
+          <div className="transition duration-700 p-4 shadow-lg rounded-lg bg-slate-50 border border-slate-300 border-dashed dark:bg-slate-800">
+            <Link href={`blogs/${blog.slug}`} className="hover:underline underline-offset-4 decoration-dotted font-bold text-purple-500 dark:text-purple-400">{blog.title}</Link>
+            <p className="text-gray-600 dark:text-gray-400">{blog.subtitle}</p>
+            <p className="text-sm dark:text-gray-300">{blog.date}</p>
           </div>
         ))}
       </div>
