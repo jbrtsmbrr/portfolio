@@ -154,7 +154,7 @@ const HardSkills = () => {
     }
   }
   return (
-    <section className="mt-[16px] px-4 xs:px-0">
+    <section id="Skills" className="mt-[16px] px-4 xs:px-0">
       <div className="flex flex-row-reverse place-items-center jutify-between mb-8 md:gap-8">
         <div className="flex-1 space-y-4">
           <h1 className="font-bold text-right">Hard Skills</h1>

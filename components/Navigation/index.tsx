@@ -5,7 +5,7 @@ import React, { useState, useEffect, useLayoutEffect } from 'react'
 import ColorMode, { TMode } from './ColorMode';
 
 type TMenu = {
-  name: String
+  name: string
 }
 const menu: TMenu[] = [
   { name: "Home" },
@@ -16,7 +16,7 @@ const menu: TMenu[] = [
   { name: "Contact" },
 ]
 
-const Menu = () => {
+const Menu = ({ onPageNavigate }: { onPageNavigate: (secction: string) => void }) => {
   const [open, setOpen] = useState(false);
   return (
     <React.Fragment>
@@ -30,12 +30,12 @@ const Menu = () => {
         <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
           {menu.map(m => (
             <li>
-              <a
-                href="#"
+              <span
                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                onClick={() => onPageNavigate(m.name)}
               >
                 {m.name}
-              </a>
+              </span>
             </li>))}
         </ul>
       </div>
@@ -65,8 +65,19 @@ const Navigation = () => {
     window.localStorage.setItem("theme", mode);
   }, [mode])
 
+  const handlePageNavigation = (section: string) => {
+    let element: any = document.getElementById(section);
+    let headerOffset: any = document.getElementById("header-navigation")?.offsetHeight
+    let elementYOffset = element?.getBoundingClientRect().top;
+    let yOffsetPosition = elementYOffset + window.pageYOffset - (headerOffset + 18)
+    window.scrollTo({
+      behavior: 'smooth',
+      top: element ? yOffsetPosition : 0
+    });
+  }
+
   return (
-    <section className="sticky top-0 z-50 backdrop-blur-[6px] px-4 sm:px-0">
+    <section id="header-navigation" className="sticky top-0 z-50 backdrop-blur-[6px] px-4 sm:px-0">
       <div className="grid grid-cols-4 py-4 max-w-lg mx-auto md:max-w-2xl lg:max-w-3xl box-border items-center">
         <div>
           <Link href="/" className="font-bold">Joe Bert</Link>
@@ -76,9 +87,9 @@ const Navigation = () => {
           <ul className="hidden lg:flex gap-4 items-center">
             {menu.map(m => (
               <li className={`${selected.name === m.name ? "font-semibold" : ""}`}>
-                <Link href="#">
+                <span onClick={() => handlePageNavigation(m.name)}>
                   {m.name}
-                </Link>
+                </span>
               </li>
             ))}
             <li>
@@ -89,7 +100,7 @@ const Navigation = () => {
           {/* Small Screen Menu */}
           <ul className="flex lg:hidden gap-4 items-center">
             <li>
-              <Menu />
+              <Menu onPageNavigate={handlePageNavigation} />
             </li>
             <li>
               <ColorMode mode={mode} toggleMode={setMode} />

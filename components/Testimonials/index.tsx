@@ -46,7 +46,7 @@ const messages = [
 const Testimonials = () => {
 
   return (
-    <section className="mt-[80px] px-4 xs:px-0">
+    <section id="Testimonials" className="mt-[80px] px-4 xs:px-0">
       <div className="relative flex place-items-center jutify-between mb-8 gap-8">
         <div className="relative h-full">
           <div className="absolute h-1/2 w-full -top-1/3 -translate-y-1/3 z-negative">
