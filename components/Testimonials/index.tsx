@@ -34,7 +34,8 @@ const messages = [
   },
   {
     name: "Mc Daryl Jumawid",
-    position: "Software QA Engineer",
+    position: "Software Quality Assurance Engineer",
+    link: "https://www.linkedin.com/in/mc-daryl-jumawid-89660a188/",
     image: {
       person: "/assets/persons/daryl.jpg",
       company: "/assets/logos/webcast.png",
