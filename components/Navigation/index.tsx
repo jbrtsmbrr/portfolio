@@ -16,7 +16,7 @@ const menu: TMenu[] = [
   { name: "Contact" },
 ]
 
-const Menu = ({ onPageNavigate }: { onPageNavigate: (secction: string) => void }) => {
+const Menu = ({ onPageNavigate }: { onPageNavigate: (section: TMenu) => void }) => {
   const [open, setOpen] = useState(false);
   return (
     <React.Fragment>
@@ -31,8 +31,8 @@ const Menu = ({ onPageNavigate }: { onPageNavigate: (secction: string) => void }
           {menu.map(m => (
             <li>
               <span
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                onClick={() => onPageNavigate(m.name)}
+                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer"
+                onClick={() => onPageNavigate(m)}
               >
                 {m.name}
               </span>
@@ -65,15 +65,17 @@ const Navigation = () => {
     window.localStorage.setItem("theme", mode);
   }, [mode])
 
-  const handlePageNavigation = (section: string) => {
-    let element: any = document.getElementById(section);
-    let headerOffset: any = document.getElementById("header-navigation")?.offsetHeight
+  const handlePageNavigation = (section: TMenu) => {
+    let element: any = document.getElementById(section.name);
+    let headerOffset: any = document.getElementById("header-navigation")?.offsetHeight;
     let elementYOffset = element?.getBoundingClientRect().top;
-    let yOffsetPosition = elementYOffset + window.pageYOffset - (headerOffset + 18)
+    let yOffsetPosition = elementYOffset + window.pageYOffset - (headerOffset + 18);
     window.scrollTo({
       behavior: 'smooth',
       top: element ? yOffsetPosition : 0
     });
+
+    setSelected(!element ? { name: "Home" } : section)
   }
 
   return (
@@ -87,7 +89,7 @@ const Navigation = () => {
           <ul className="hidden lg:flex gap-4 items-center">
             {menu.map(m => (
               <li className={`${selected.name === m.name ? "font-semibold" : ""}`}>
-                <span onClick={() => handlePageNavigation(m.name)}>
+                <span onClick={() => handlePageNavigation(m)} className="cursor-pointer">
                   {m.name}
                 </span>
               </li>
