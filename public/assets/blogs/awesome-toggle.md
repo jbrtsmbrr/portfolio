@@ -517,10 +517,6 @@ And now I want to share it with you. 🔥
 
       export default Toggle
       ```
-
-    - Actually this is my favorite part in making this component, why? It is because of how the moon shows up inside the sun when changing to dark mode.
-    - Okay, lets get to work!
-    - The way I see it is, the moon is just positioned in the very right side of the main container, in my mind this is how I see it:
 4.  **Clouds and Stars:** In this section we will create the most awesome part in this component.
     - Just like the other sections above, will will divide this task into two:
       1. Creating the clouds and stars.
