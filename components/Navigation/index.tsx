@@ -88,7 +88,7 @@ const Navigation = () => {
           {/* Large Screen Menu */}
           <ul className="hidden lg:flex gap-4 items-center">
             {menu.map(m => (
-              <li className={`${selected.name === m.name ? "font-semibold" : ""}`}>
+              <li className={`${selected.name === m.name ? "font-semibold dark:text-gray-100" : "text-gray-600 dark:text-gray-400"}`}>
                 <span onClick={() => handlePageNavigation(m)} className="cursor-pointer">
                   {m.name}
                 </span>
