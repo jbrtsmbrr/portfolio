@@ -1,7 +1,7 @@
 ---
 title: "Understanding CSS Positions"
 subtitle: "Core differences in CSS positioning."
-date: "2020-12-19"
+date: "2023-06-27"
 cr: ["https://www.artstation.com/shizuorin"]
 ---
 
