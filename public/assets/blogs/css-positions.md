@@ -184,7 +184,7 @@ html element.
 
     ![assets/blogs/images/css-positions/blog-positioning-fig4](/assets/blogs/images/css-positions/blog-positioning-fig4.PNG)
 
-    > I also added `background-color` and `padding` to the `.grand-parent` element so we can easily its dimension.
+    > I also added `background-color` and `padding` to the `.grand-parent` element so we can see easily its dimension.
 
   - Notice that as soon as we add a `position: relative;` to the `.grand-parent` element, the `.child` element position itself relative to it because it is the nearest parent we a declared position statement.
 
