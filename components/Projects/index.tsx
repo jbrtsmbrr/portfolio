@@ -92,10 +92,10 @@ const Projects = () => {
             {/* </div> */}
             <div className="relative top-1/2 -translate-y-1/2 text-center my-auto">
               <div>
-                <h1 className="font-bold dark:text-gray-200">{project.title}</h1>
-                <Link href={project.url} target="_blank" className="text-xs text-gray-400 dark:text-gray-400">
+                <Link href={project.url} target="_blank" className="font-bold dark:text-gray-200 block mb-2 hover:underline underline-offset-4 decoration-dotted ">{project.title}</Link>
+                {/* <Link href={project.url} target="_blank" className="text-xs text-gray-400 dark:text-gray-400">
                   {project?.url?.substring(0, 30) || "www.sample.project.com"}
-                </Link>
+                </Link> */}
               </div>
               <p className="text-sm dark:text-gray-300">{project.description.substring(0, 100)}</p>
             </div>
