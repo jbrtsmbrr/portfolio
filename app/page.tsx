@@ -15,10 +15,10 @@ export default function Home() {
 
       </section> */}
       <HardSkills />
+      <Projects />
       <Blogs />
       {/* <Timeline /> */}
       <Testimonials />
-      {/* <Projects /> */}
       <Contact />
       {/* <Projects /> */}
     </div>
