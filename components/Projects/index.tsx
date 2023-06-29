@@ -23,7 +23,7 @@ const projects = [
     },
     url: "https://capstone-portal.netlify.app/projects",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, modi sapiente deserunt voluptatibus accusamus exercitationem facere molestiae expedita ad.",
+      "Capstone Portal allows students to submit their thesis on the internet, allowing professors to quickly review their project and immediately see what has to be changed.",
     tags: ["Recent"]
   },
   {
@@ -32,7 +32,7 @@ const projects = [
       url: "/assets/illustrations/casual-life-3d-game-controller.png",
       background: "bg-[#8AC2CA]"
     },
-    url: "https://capstone-portal.netlify.app/projects",
+    url: "https://www.facebook.com/CosMos.UCC/",
     description:
       "Android-based and Web-based Home Power Monitoring System [Consumption Monitoring System (CosMos)] is genuinely fitted for anyone who's taking the safeness of the house and for does who is conscious to their electric consumption seriously because of the electronic appliances used.",
     tags: ["Old"]
@@ -71,9 +71,7 @@ const Projects = () => {
           <h1 className="font-bold text-lg">Project</h1>
           <h1 className="font-bold text-3xl">Collaborations</h1>
           <p className="mt-3 text-gray-500 dark:text-gray-400">
-            These are the skills I have at the moment. you will notice some of
-            them have lower opacity than others, that is because I'm still
-            exploring those tools.
+            Here are the projects on which I collaborated. These projects enabled me to get the necessary expertise and experience for my profession.
           </p>
         </div>
       </div>
@@ -99,7 +97,7 @@ const Projects = () => {
                   {project?.url?.substring(0, 30) || "www.sample.project.com"}
                 </Link> */}
               </div>
-              <p className="text-sm dark:text-gray-400 text-gray-500">{project.description.substring(0, 100)}</p>
+              <p className="text-sm dark:text-gray-400 text-gray-500">{project.description.substring(0, 115)} . . . <Link href={project.url} target="_blank" className="text-sm dark:text-gray-400 text-gray-500 hover:underline underline-offset-4 decoration-dotted">[Read more]</Link> </p>
             </div>
           </div>
         ))}
