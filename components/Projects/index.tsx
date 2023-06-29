@@ -7,7 +7,8 @@ const projects = [
     title: "TrackMe Suite",
     image: {
       url: "/assets/illustrations/casual-life-3d-planet-yellow.png",
-      background: "drop-shadow-[0px_10px_30px_rgba(255,143,0,1)]"
+      // background: "drop-shadow-[0px_10px_30px_rgba(255,143,0,1)]",
+      background: "bg-[#F7C400]"
     },
     url: "https://trackme.com.ph/products/logistics/",
     description:
@@ -18,7 +19,7 @@ const projects = [
     title: "Capstone Portal",
     image: {
       url: "/assets/illustrations/business-3d-side-view-of-coffee-paper-cup-with-sleeve.png",
-      background: "drop-shadow-[0px_10px_30px_rgba(196,148,85,1)]"
+      background: "bg-[#C49455]"
     },
     url: "https://capstone-portal.netlify.app/projects",
     description:
@@ -29,7 +30,7 @@ const projects = [
     title: "CosMos",
     image: {
       url: "/assets/illustrations/casual-life-3d-game-controller.png",
-      background: "drop-shadow-[0px_10px_30px_rgba(138,194,202,1)]"
+      background: "bg-[#8AC2CA]"
     },
     url: "https://capstone-portal.netlify.app/projects",
     description:
@@ -67,7 +68,7 @@ const Projects = () => {
           </div>
         </div> */}
         <div className="flex-1 text-center">
-          <h1 className="font-bold text-lg">Projects</h1>
+          <h1 className="font-bold text-lg">Project</h1>
           <h1 className="font-bold text-3xl">Collaborations</h1>
           <p className="mt-3 text-gray-500 dark:text-gray-400">
             These are the skills I have at the moment. you will notice some of
@@ -78,18 +79,19 @@ const Projects = () => {
       </div>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-4 mt-14">
         {projects.map((project) => (
-          <div className="relative shadow-lg min-h-[200px] sm:max-w-none max-w-xs px-4 py-12 rounded-2xl bg-gray-100 dark:bg-slate-800 my-7 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100 dark:border-slate-700 sm:mx-0 mx-auto">
-            {/* <div className="relative my-2"> */}
+          <div className="relative transition duration-700 shadow-lg min-h-[200px] sm:max-w-none max-w-xs px-4 py-12 rounded-2xl bg-gray-100 dark:bg-slate-800 my-7 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100 dark:border-slate-700 sm:mx-0 mx-auto">
+            <div className="absolute -top-12 left-1/2 -translate-x-1/2">
+              <div className={`absolute animate-pulse origin-center rounded-full blur-xl h-[80px] w-[80px] opacity-80 dark:opacity-60 ${project.image.background}`}></div>
               <Image
-                className={`filter ${project.image.background} absolute -top-12 left-1/2 -translate-x-1/2`}
+                className="relative"
                 alt="sample-project"
                 src={project.image.url}
                 height={80}
                 width={80}
-                // className="p-1 rounded-lg shadow-lg"
-                // style={{ background: project.image.background }}
+              // className="p-1 rounded-lg shadow-lg"
+              // style={{ background: project.image.background }}
               />
-            {/* </div> */}
+            </div>
             <div className="relative top-1/2 -translate-y-1/2 text-center my-auto">
               <div>
                 <Link href={project.url} target="_blank" className="font-bold dark:text-gray-200 block mb-2 hover:underline underline-offset-4 decoration-dotted ">{project.title}</Link>
@@ -97,7 +99,7 @@ const Projects = () => {
                   {project?.url?.substring(0, 30) || "www.sample.project.com"}
                 </Link> */}
               </div>
-              <p className="text-sm dark:text-gray-300">{project.description.substring(0, 100)}</p>
+              <p className="text-sm dark:text-gray-400 text-gray-500">{project.description.substring(0, 100)}</p>
             </div>
           </div>
         ))}
