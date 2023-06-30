@@ -72,7 +72,7 @@ const Contact = () => {
       <div className="text-center space-y-2">
         <h4 className="font-bold text-lg">Contact me</h4>
         <h1 className="font-semibold text-3xl">Ask a question</h1>
-        <p className="text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident recusandae vel autem molestias adipisci amet beatae accusamus corrupti voluptatum nisi, modi cupiditate ipsa. Culpa quas sint maiores. Maxime, ad amet!</p>
+        <p className="text-gray-700 dark:text-gray-400">For further information about me, feel free to send inquiries, suggestions, or anything else you want to know about me. You may contact me using the form below or any of the social media profiles I've provided on this page.</p>
       </div>
       <div className="relative grid grid-cols-2 gap-4 items-center">
         <div className="md:col-span-1 col-span-2">
