@@ -11,7 +11,7 @@ const roboto = Karla({
 });
 
 export const metadata = {
-  title: 'Joe Bert',
+  title: 'Joe Bert Sembrero',
   description: "Joe Bert's Portfolio",
 }
 
