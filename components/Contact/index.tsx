@@ -84,7 +84,7 @@ const Contact = () => {
             <button className="w-full mt-2 py-3 bg-blue-500 disabled:bg-blue-400 disabled:text-gray-200 text-white rounded-lg shadow-md text-xs" disabled={disabledBtn}>{ submitting ? "Submitting..." : "Submit" }</button>
           </form>
         </div>
-        <div className="md:relative absolute h-full w-full">
+        <div className="md:relative absolute z-negative h-full w-full">
           <Image alt="spaceship" src="/assets/illustrations/3d-casual-life-convert-megaphone.png" width={250} height={250}
             className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 -rotate-12 md:block hidden" />
           <div className="absolute top-0 right-0 z-negative">
