@@ -1,7 +1,7 @@
 ---
 title: "Creating awesome Toggle"
 subtitle: "Tutorial how I created the toggler widget in this portfolio website."
-date: "2023-11-06"
+date: "2023-06-11"
 ---
 
 Have you ever seen this meme? 🤣
