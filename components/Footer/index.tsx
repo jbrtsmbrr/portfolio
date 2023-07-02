@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="absolute left-0 w-full h-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 shadow-lg flex flex-col sm:items-center items-right justify-center gap-4 px-5">
+      <div className="absolute left-0 w-full h-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 shadow-lg flex flex-col sm:items-center items-right justify-center gap-4 px-6">
         <h1 className="text-xl font-bold sm:text-center text-right">Joe Bert</h1>
         <div>
           <ul className="grid sm:grid-cols-6 grid-cols-2 sm:gap-0 gap-2 sm:justify-center justify-end sm:items-center">
