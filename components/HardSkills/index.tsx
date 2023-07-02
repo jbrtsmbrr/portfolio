@@ -133,6 +133,13 @@ const skills: SkillCardProp[] = [
     background: "rgba(255, 65, 0, 0.066)",
     type: "Current",
   },
+  {
+    imageUrl: "/assets/icons/zustand-removebg-preview.png",
+    label: "Zustand",
+    learning: true,
+    background: "rgba(194, 123, 103, 0.066)",
+    type: "New/Exploring",
+  },
 ];
 
 const HardSkills = () => {
