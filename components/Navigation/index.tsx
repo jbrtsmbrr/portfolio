@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import React, { useState, useEffect, useLayoutEffect } from 'react'
 import ColorMode, { TMode } from './ColorMode';
+import useStore from '@/src/store';
 
 type TMenu = {
   name: string
@@ -45,7 +46,8 @@ const Menu = ({ onPageNavigate }: { onPageNavigate: (section: TMenu) => void }) 
 }
 
 const Navigation = () => {
-  const [selected, setSelected] = useState<TMenu>({ name: "Home" });
+  // const [selected, setSelected] = useState<TMenu>({ name: "Home" });
+  const { currentSection: selected, setCurrentSection: setSelected } = useStore();
 
   const [mode, setMode] = useState<TMode>("light");
 
@@ -65,18 +67,43 @@ const Navigation = () => {
     window.localStorage.setItem("theme", mode);
   }, [mode])
 
-  const handlePageNavigation = (section: TMenu) => {
-    let element: any = document.getElementById(section.name);
-    let headerOffset: any = document.getElementById("header-navigation")?.offsetHeight;
-    let elementYOffset = element?.getBoundingClientRect().top;
-    let yOffsetPosition = elementYOffset + window.pageYOffset - (headerOffset + 18);
-    window.scrollTo({
-      behavior: 'smooth',
-      top: element ? yOffsetPosition : 0
-    });
+  useEffect(() => {
+    const sectionsElementsTops = menu.map(m => {
+      const element = document.getElementById(m.name)
+      const top = element?.getBoundingClientRect().top;
+      return { name: m.name, top };
+    })
 
-    setSelected(!element ? { name: "Home" } : section)
-  }
+    let headerOffset: any = document.getElementById("header-navigation")?.offsetHeight;
+    let offsetWithGap = headerOffset + 18;
+
+    window.addEventListener('scrollend', () => {
+      const yOffset = window.pageYOffset + offsetWithGap;
+      // console.log(">> scrollend")
+      // console.log(window.pageYOffset)
+      for (let i = 0, length = sectionsElementsTops.length; i < length; i++) {
+        if (i === length - 1) {
+          if (sectionsElementsTops[i].top <= yOffset) {
+            // console.log(`${sectionsElementsTops[i].name} > Current: ${sectionsElementsTops[i].top}, Next: ${ sectionsElementsTops[1].top}, Window: ${yOffset}`)
+            setSelected({ name: sectionsElementsTops[i].name }, false);
+            break;
+          }
+        }
+
+        if (sectionsElementsTops[i].top <= yOffset && sectionsElementsTops[i + 1].top >= yOffset) {
+          // console.log(`
+          // ${sectionsElementsTops[i].name} >
+          // Current: ${sectionsElementsTops[i].top},
+          // Next: ${ sectionsElementsTops[i + 1].top},
+          // Window: ${yOffset}`)
+
+          setSelected({ name: sectionsElementsTops[i].name }, false);
+          break;
+        }
+      }
+    });
+  }, [])
+
 
   return (
     <section id="header-navigation" className="sticky top-0 z-50 backdrop-blur-[6px] px-4 sm:px-0">
@@ -89,7 +116,7 @@ const Navigation = () => {
           <ul className="hidden lg:flex gap-4 items-center">
             {menu.map(m => (
               <li className={`${selected.name === m.name ? "font-semibold dark:text-gray-100" : "text-gray-600 dark:text-gray-400"}`}>
-                <span onClick={() => handlePageNavigation(m)} className="cursor-pointer">
+                <span onClick={() => setSelected(m)} className="cursor-pointer">
                   {m.name}
                 </span>
               </li>
@@ -102,7 +129,7 @@ const Navigation = () => {
           {/* Small Screen Menu */}
           <ul className="flex lg:hidden gap-4 items-center">
             <li>
-              <Menu onPageNavigate={handlePageNavigation} />
+              <Menu onPageNavigate={setSelected} />
             </li>
             <li>
               <ColorMode mode={mode} toggleMode={setMode} />

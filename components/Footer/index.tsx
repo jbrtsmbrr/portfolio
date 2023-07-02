@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { Karla } from "next/font/google";
+import useStore from "@/src/store";
 
 const roboto = Karla({
   weight: ["400", "700"],
@@ -26,16 +27,7 @@ const currentDate = new Date();
 
 const Footer = () => {
 
-  const handlePageNavigation = (section: TMenu) => {
-    let element: any = document.getElementById(section.name);
-    let headerOffset: any = document.getElementById("header-navigation")?.offsetHeight;
-    let elementYOffset = element?.getBoundingClientRect().top;
-    let yOffsetPosition = elementYOffset + window.pageYOffset - (headerOffset + 18);
-    window.scrollTo({
-      behavior: 'smooth',
-      top: element ? yOffsetPosition : 0
-    });
-  }
+  const setCurrentSection = useStore(store => store.setCurrentSection);
 
   return (
     <section id="Footer" className="relative box-border h-[300px]">
@@ -54,7 +46,7 @@ const Footer = () => {
           <ul className="grid sm:grid-cols-6 grid-cols-2 sm:gap-0 gap-2 sm:justify-center justify-end sm:items-center">
             {menu.map((m) => (
               <li className={`text-gray-600 dark:text-gray-400 col-span-1 sm:text-center text-right`}>
-                <span onClick={() => handlePageNavigation(m)} className="cursor-pointer">
+                <span onClick={() => setCurrentSection(m)} className="cursor-pointer">
                   {m.name}
                 </span>
               </li>
