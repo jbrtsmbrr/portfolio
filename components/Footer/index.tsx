@@ -38,7 +38,7 @@ const Footer = () => {
   }
 
   return (
-    <section id="Footer" className="relative px-4 xs:px-0 h-[300px]">
+    <section id="Footer" className="relative box-border h-[300px]">
       <div className="relative flex place-items-center jutify-between mb-8 gap-8">
         <div className="relative h-full">
           <div className="absolute h-1/2 w-full -top-1/3 -translate-y-1/3 z-negative">
@@ -48,11 +48,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="absolute w-full h-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 shadow-lg sm:p-8 p-6 flex flex-col sm:items-center items-right justify-center gap-4">
+      <div className="absolute left-0 w-full h-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 shadow-lg flex flex-col sm:items-center items-right justify-center gap-4 px-7">
         <h1 className="text-xl font-bold sm:text-center text-right">Joe Bert</h1>
         <div>
           <ul className="grid sm:grid-cols-6 grid-cols-2 sm:gap-0 gap-2 sm:justify-center justify-end sm:items-center">
-            {menu.map((m, i) => (
+            {menu.map((m) => (
               <li className={`text-gray-600 dark:text-gray-400 col-span-1 sm:text-center text-right`}>
                 <span onClick={() => handlePageNavigation(m)} className="cursor-pointer">
                   {m.name}
