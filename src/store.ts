@@ -14,7 +14,7 @@ import { TMenuItem } from "./types";
 //   setSelected(!element ? { name: "Home" } : section)
 // }
 
-const useStore = create<{ currentSection: TMenuItem, setCurrentSection: (section: TMenuItem) => any }>((set) => ({
+const useStore = create<{ currentSection: TMenuItem, setCurrentSection: (section: TMenuItem, flag: Boolean) => any }>((set) => ({
   currentSection: { name: "Home" },
   setCurrentSection: (section: TMenuItem, flag: Boolean = true) => {
     let element: any = document.getElementById(section.name);
