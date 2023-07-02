@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <section className="relative grid grid-cols-2 md:h-[480px] gap-4 px-4 xs:px-0">
+    <section id="Home" className="relative grid grid-cols-2 md:h-[480px] gap-4 px-4 xs:px-0">
       <div className="flex flex-col-reverse md:flex-col gap-4">
         <div className="md:absolute md:h-full md:-left-14 lg:-left-20 flex gap-4 md:flex-col justify-center">
           <a href="https://github.com/jbrtsmbrr" target="_blank">
