@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import "@/styles/globals.css";
 import { Inter, Karla } from 'next/font/google'
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={`${roboto.className} relative bg-slate-50 main h-auto transition duration-700 after:invert dark:after:invert-0 dark:bg-slate-900 dark:text-slate-200`}>
         <Navigation />
         {children}
+        <Footer />
       </body>
     </html>
   )
