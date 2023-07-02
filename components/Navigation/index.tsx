@@ -70,7 +70,7 @@ const Navigation = () => {
   useEffect(() => {
     const sectionsElementsTops = menu.map(m => {
       const element = document.getElementById(m.name)
-      const top = element?.getBoundingClientRect().top;
+      const top = element?.getBoundingClientRect().top || 0;
       return { name: m.name, top };
     })
 
@@ -81,6 +81,7 @@ const Navigation = () => {
       const yOffset = window.pageYOffset + offsetWithGap;
       // console.log(">> scrollend")
       // console.log(window.pageYOffset)
+
       for (let i = 0, length = sectionsElementsTops.length; i < length; i++) {
         if (i === length - 1) {
           if (sectionsElementsTops[i].top <= yOffset) {
@@ -90,7 +91,7 @@ const Navigation = () => {
           }
         }
 
-        if (sectionsElementsTops[i].top <= yOffset && sectionsElementsTops[i + 1].top >= yOffset) {
+        if (sectionsElementsTops[i]?.top <= yOffset && sectionsElementsTops[i + 1].top >= yOffset) {
           // console.log(`
           // ${sectionsElementsTops[i].name} >
           // Current: ${sectionsElementsTops[i].top},
