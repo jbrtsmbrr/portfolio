@@ -1,23 +1,24 @@
 import { create } from "zustand";
 import { TMenuItem } from "./types";
 
-// const handlePageNavigation = (section: TMenuItem) => {
-//   let element: any = document.getElementById(section.name);
-//   let headerOffset: any = document.getElementById("header-navigation")?.offsetHeight;
-//   let elementYOffset = element?.getBoundingClientRect().top;
-//   let yOffsetPosition = elementYOffset + window.pageYOffset - (headerOffset + 18);
-//   window.scrollTo({
-//     behavior: 'smooth',
-//     top: element ? yOffsetPosition : 0
-//   });
+type Ref = { ref: any };
+type TStore = {
+  sectionRefs: [Ref] | [],
+  setSectionRefs: (ref: Ref) => any
+  currentSection: TMenuItem,
+  setCurrentSection: (section: TMenuItem, flag?: Boolean) => any
+}
 
-//   setSelected(!element ? { name: "Home" } : section)
-// }
-
-const useStore = create<{ currentSection: TMenuItem, setCurrentSection: (section: TMenuItem, flag?: Boolean) => any }>((set) => ({
+const useStore = create<TStore>((set, get) => ({
+  sectionRefs: [],
+  setSectionRefs: (ref: Ref) => {
+    set((store) => {
+      return { ...store, sectionRefs: [...(store.sectionRefs || []), ref] }
+    })
+  },
   currentSection: { name: "Home" },
   setCurrentSection: (section: TMenuItem, flag: Boolean = true) => {
-    let element: any = document.getElementById(section.name);
+    let element: any = document.querySelector(`#${section.name}`);
     let headerOffset: any = document.getElementById("header-navigation")?.offsetHeight;
     let elementYOffset = element?.getBoundingClientRect().top;
     let yOffsetPosition = elementYOffset + window.pageYOffset - (headerOffset + 18);
@@ -28,7 +29,6 @@ const useStore = create<{ currentSection: TMenuItem, setCurrentSection: (section
         top: element ? yOffsetPosition : 0
       });
 
-    // set(() => !element ? ({ currentSection: section }) : ({ currentSection: section }))
     if (element)
       set(() => ({ currentSection: section }))
   }

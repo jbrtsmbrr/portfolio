@@ -29,8 +29,8 @@ const Menu = ({ onPageNavigate }: { onPageNavigate: (section: TMenu) => void }) 
       </button>
       <div id="dropdown" className={`${open ? "block" : "hidden"} absolute z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 transform -translate-x-1`}>
         <ul className="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-          {menu.map(m => (
-            <li>
+          {menu.map((m, index) => (
+            <li key={`sm-menu-${index}`}>
               <span
                 className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer"
                 onClick={() => onPageNavigate(m)}
@@ -47,7 +47,7 @@ const Menu = ({ onPageNavigate }: { onPageNavigate: (section: TMenu) => void }) 
 
 const Navigation = () => {
   // const [selected, setSelected] = useState<TMenu>({ name: "Home" });
-  const { currentSection: selected, setCurrentSection: setSelected } = useStore();
+  const { currentSection: selected, setCurrentSection: setSelected, ...rest } = useStore();
 
   const [mode, setMode] = useState<TMode>("light");
 
@@ -69,38 +69,24 @@ const Navigation = () => {
 
   useEffect(() => {
     const sectionsElementsTops = menu.map(m => {
-      const element = document.getElementById(m.name)
+      const element = document.querySelector(`#${m.name}`)
       const top = element?.getBoundingClientRect().top || 0;
-      return { name: m.name, top };
+      const bottom = element?.getBoundingClientRect().bottom || 0;
+      return { name: m.name, top, bottom };
     })
 
     let headerOffset: any = document.getElementById("header-navigation")?.offsetHeight;
     let offsetWithGap = headerOffset + 18;
 
     window.addEventListener('scrollend', () => {
-      const yOffset = window.pageYOffset + offsetWithGap;
-      // console.log(">> scrollend")
-      // console.log(window.pageYOffset)
+      const yOffset = window.scrollY + offsetWithGap;
 
       for (let i = 0, length = sectionsElementsTops.length; i < length; i++) {
-        if (i === length - 1) {
-          if (sectionsElementsTops[i].top <= yOffset) {
-            // console.log(`${sectionsElementsTops[i].name} > Current: ${sectionsElementsTops[i].top}, Next: ${ sectionsElementsTops[1].top}, Window: ${yOffset}`)
-            setSelected({ name: sectionsElementsTops[i].name }, false);
-            break;
-          }
-        }
-
-        if (sectionsElementsTops[i]?.top <= yOffset && sectionsElementsTops[i + 1].top >= yOffset) {
-          // console.log(`
-          // ${sectionsElementsTops[i].name} >
-          // Current: ${sectionsElementsTops[i].top},
-          // Next: ${ sectionsElementsTops[i + 1].top},
-          // Window: ${yOffset}`)
-
+        if (sectionsElementsTops[i].top <= yOffset && sectionsElementsTops[i].bottom >= yOffset) {
           setSelected({ name: sectionsElementsTops[i].name }, false);
           break;
         }
+
       }
     });
   }, [])
@@ -115,8 +101,8 @@ const Navigation = () => {
         <div className="col-span-3 ml-auto">
           {/* Large Screen Menu */}
           <ul className="hidden lg:flex gap-4 items-center">
-            {menu.map(m => (
-              <li className={`${selected.name === m.name ? "font-semibold dark:text-gray-100" : "text-gray-600 dark:text-gray-400"}`}>
+            {menu.map((m, index) => (
+              <li key={`lg-menu-${index}`} className={`${selected.name === m.name ? "font-semibold dark:text-gray-100" : "text-gray-600 dark:text-gray-400"}`}>
                 <span onClick={() => setSelected(m)} className="cursor-pointer">
                   {m.name}
                 </span>
