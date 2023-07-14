@@ -80,9 +80,9 @@ const Testimonials = () => {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {messages.map((item, index) => (
-          <div className="transition duration-700 flex flex-col-reverse shadow-lg rounded-2xl py-4 px-6 space-y-4 bg-slate-50 dark:bg-slate-900 dark:shadow-xl">
+          <div key={`testimonials-${index}`} className="transition duration-700 flex flex-col-reverse shadow-lg rounded-2xl py-4 px-6 space-y-4 bg-slate-50 dark:bg-slate-900 dark:shadow-xl box-border">
             <div className="mt-6">
-              <Image
+              <img
                 alt={`company-${index}`}
                 src={item.image.company}
                 width={150}
