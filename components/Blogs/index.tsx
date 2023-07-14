@@ -33,8 +33,8 @@ const Blog = () => {
         </div>
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1 md:gap-4 gap-2">
-        {blogs.map(blog => (
-          <div className="transition duration-700 p-4 shadow-lg rounded-lg bg-slate-50 border border-slate-300 border-dashed dark:bg-slate-800">
+        {blogs.map((blog, index) => (
+          <div key={`blog-${index}`} className="transition duration-700 p-4 shadow-lg rounded-lg bg-slate-50 border border-slate-300 border-dashed dark:bg-slate-800">
             <Link href={`blogs/${blog.slug}`} className="hover:underline underline-offset-4 decoration-dotted font-bold text-purple-500 dark:text-purple-400">{blog.title}</Link>
             <p className="text-gray-600 dark:text-gray-400">{blog.subtitle}</p>
             <p className="text-sm dark:text-gray-300">{blog.date}</p>

@@ -44,8 +44,8 @@ const Footer = () => {
         <h1 className="text-xl font-bold sm:text-center text-right">Joe Bert</h1>
         <div>
           <ul className="grid sm:grid-cols-6 grid-cols-2 sm:gap-0 gap-2 sm:justify-center justify-end sm:items-center">
-            {menu.map((m) => (
-              <li className={`text-gray-600 dark:text-gray-400 col-span-1 sm:text-center text-right`}>
+            {menu.map((m, index) => (
+              <li key={`menu-footer-${index}`} className={`text-gray-600 dark:text-gray-400 col-span-1 sm:text-center text-right`}>
                 <span onClick={() => setCurrentSection(m)} className="cursor-pointer">
                   {m.name}
                 </span>

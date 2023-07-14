@@ -76,8 +76,8 @@ const Projects = () => {
         </div>
       </div>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-4 mt-14">
-        {projects.map((project) => (
-          <div className="relative transition duration-700 shadow-lg min-h-[200px] sm:max-w-none max-w-xs px-4 py-12 rounded-2xl bg-gray-100 dark:bg-slate-800 my-7 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100 dark:border-slate-700 sm:mx-0 mx-auto">
+        {projects.map((project, index) => (
+          <div key={`project-${index}`} className="relative transition duration-700 shadow-lg min-h-[200px] sm:max-w-none max-w-xs px-4 py-12 rounded-2xl bg-gray-100 dark:bg-slate-800 my-7 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100 dark:border-slate-700 sm:mx-0 mx-auto">
             <div className="absolute -top-12 left-1/2 -translate-x-1/2">
               <div className={`absolute animate-pulse origin-center rounded-full blur-xl h-[80px] w-[80px] opacity-80 dark:opacity-60 ${project.image.background}`}></div>
               <Image

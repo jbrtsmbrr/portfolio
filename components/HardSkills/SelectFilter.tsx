@@ -49,7 +49,7 @@ const SelectFilter = ({ value, onSelectedChanged }: TSelectedFilter) => {
           aria-labelledby="dropdownHelperButton"
         >
           {skillOptions.map((opt, index) => (
-            <li>
+            <li key={`skill-filter-${index}`}>
               <div className="flex p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
                 <div className="flex items-center h-5">
                   <input
