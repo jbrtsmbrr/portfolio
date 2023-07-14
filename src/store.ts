@@ -3,19 +3,11 @@ import { TMenuItem } from "./types";
 
 type Ref = { ref: any };
 type TStore = {
-  sectionRefs: [Ref] | [],
-  setSectionRefs: (ref: Ref) => any
   currentSection: TMenuItem,
   setCurrentSection: (section: TMenuItem, flag?: Boolean) => any
 }
 
-const useStore = create<TStore>((set, get) => ({
-  sectionRefs: [],
-  setSectionRefs: (ref: Ref) => {
-    set((store) => {
-      return { ...store, sectionRefs: [...(store.sectionRefs || []), ref] }
-    })
-  },
+const useStore = create<TStore>((set) => ({
   currentSection: { name: "Home" },
   setCurrentSection: (section: TMenuItem, flag: Boolean = true) => {
     let element: any = document.querySelector(`#${section.name}`);
