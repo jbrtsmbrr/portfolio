@@ -5,7 +5,7 @@ import logger from '../__utils/log'
 
 const BlogCard = ({ blog }: { blog: TBlog }) => {
   const handleClick = async () => {
-    "use server"
+    // "use server"
     // await logger("Blogs", `Visited ${blog.slug}`);
   }
   return (
