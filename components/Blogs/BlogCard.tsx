@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import { TBlog } from '../__utils/getBlogsMetaData'
 import Link from 'next/link'
