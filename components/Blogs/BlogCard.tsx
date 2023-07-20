@@ -1,12 +1,11 @@
-"use client"
-
 import React from 'react'
 import { TBlog } from '../__utils/getBlogsMetaData'
 import Link from 'next/link'
 import logger from '../__utils/log'
 
 const BlogCard = ({ blog }: { blog: TBlog }) => {
-  const handleClick = () => {
+  const handleClick = async () => {
+    "use server"
     logger("Blogs", `Visited ${blog.slug}`);
   }
   return (
