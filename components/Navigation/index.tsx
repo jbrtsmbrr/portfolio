@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React, { useState, useEffect, useLayoutEffect } from 'react'
 import ColorMode, { TMode } from './ColorMode';
 import useStore from '@/src/store';
+import logger from '../__utils/log';
 
 type TMenu = {
   name: string
@@ -83,6 +84,7 @@ const Navigation = () => {
 
       for (let i = 0, length = sectionsElementsTops.length; i < length; i++) {
         if (sectionsElementsTops[i].top <= yOffset && sectionsElementsTops[i].bottom >= yOffset) {
+          logger(sectionsElementsTops[i].name);
           setSelected({ name: sectionsElementsTops[i].name }, false);
           break;
         }
