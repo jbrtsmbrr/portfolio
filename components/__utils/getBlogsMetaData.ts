@@ -1,7 +1,14 @@
 import fs from "fs";
 import matter from "gray-matter";
 
-const getBlogsMetadata = () => {
+export type TBlog = {
+  title: string,
+  date: string,
+  subtitle: string,
+  slug: string
+}
+
+const getBlogsMetadata = (): TBlog[] => {
   const folder = "public/assets/blogs/";
   const files = fs.readdirSync(folder);
   const blogPosts = files.filter(file => file.endsWith(".md"));
