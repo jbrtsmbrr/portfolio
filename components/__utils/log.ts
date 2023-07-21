@@ -1,6 +1,6 @@
 
 const logger = async (module: string = "Home", description?: string) => {
-  const response = await fetch("http://localhost:3000/api/logs", {
+  const response = await fetch(`${process.env.BASE_URL}/logs`, {
     method: "POST",
     body: JSON.stringify({ module, description })
   })
