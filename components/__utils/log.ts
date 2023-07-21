@@ -3,9 +3,7 @@ const logger = async (module: string = "Home", description?: string) => {
   const response = await fetch(`${process.env.BASE_URL}/logs`, {
     method: "POST",
     body: JSON.stringify({ module, description }),
-    headers: {
-      "Content-Type": "application/json"
-    }
+    cache: "no-store"
   })
 
   const result = await response.json();
