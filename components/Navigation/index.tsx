@@ -84,7 +84,7 @@ const Navigation = () => {
 
       for (let i = 0, length = sectionsElementsTops.length; i < length; i++) {
         if (sectionsElementsTops[i].top <= yOffset && sectionsElementsTops[i].bottom >= yOffset) {
-          // logger(sectionsElementsTops[i].name);
+          logger(sectionsElementsTops[i].name);
           setSelected({ name: sectionsElementsTops[i].name }, false);
           break;
         }
