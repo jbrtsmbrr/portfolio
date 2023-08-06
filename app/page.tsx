@@ -21,7 +21,7 @@ const addLogs = async (module: string, description?: string) => {
 }
 
 export default async function Home() {
-  // await addLogs("PAGE_LOADED");
+  await addLogs("PAGE_LOADED");
   return (
     <div className="max-w-lg mx-auto md:max-w-2xl lg:max-w-3xl xs:px-4 sm:overflow-visible overflow-hidden">
       <Banner />
