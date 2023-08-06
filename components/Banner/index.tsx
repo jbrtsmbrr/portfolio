@@ -5,8 +5,8 @@ const Banner = () => {
     <section id="Home" className="relative grid grid-cols-2 md:h-[480px] gap-4 px-4 xs:px-0">
       <div className="flex flex-col-reverse md:flex-col gap-4">
         <div className="md:absolute md:h-full md:-left-14 lg:-left-20 flex gap-4 md:flex-col justify-center">
-          <a href="https://github.com/jbrtsmbrr" target="_blank">
-            <Image alt="github" src="/assets/icons/icons8-github.svg" width={28} height={28} />
+          <a href="https://gitlab.com/jbrtsmbrr" target="_blank">
+            <Image alt="github" src="/assets/icons/icons8-gitlab.svg" width={27} height={27} />
           </a>
           <a href="https://www.linkedin.com/in/joe-bert-sembrero-0a7977198" target="_blank">
             <Image alt="github" src="/assets/icons/icons8-linkedin.svg" width={25} height={25} />
@@ -20,8 +20,8 @@ const Banner = () => {
             <h1 className="font-bold text-3xl">
               Hi, I'm Joe Bert
             </h1>
-            <h3 className="font-medium text-gray-500 underline underline-offset-4 decoration-dotted dark:text-gray-300">Frontend Developer</h3>
-            <p className="text-sm text-gray-400 dark:text-gray-400">
+            <h3 className="text-md text-gray-500 dark:text-gray-400 font-semibold tracking-[0.020em]">Frontend<span className="text-xl px-2 text-gray-400 dark:text-gray-500">&bull;</span>Backend Developer</h3>
+            <p className="text-md text-gray-500 dark:text-gray-400">
               Currently, I am working as frontend developer at <a href="https://webcast-inc.com.ph/" target="_blank" className="hover:underline underline-offset-4 decoration-dotted">WebCast Technologies Inc.</a> 🐱‍🏍
             </p>
           </div>
