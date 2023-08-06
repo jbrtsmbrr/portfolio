@@ -12,6 +12,10 @@
   }
 }
 
+.dark {
+  color-scheme: dark;
+}
+
 .main {
   overflow-x: hidden;
 }
