@@ -13,19 +13,34 @@ const projects = [
     url: "https://trackme.com.ph/products/logistics/",
     description:
       "TrackMe Suite is designed to enhance the operational efficiency of businesses through smart integration of location technology, information, and services. With capabilities ranging from fleet management to delivery monitoring that supports entire supply chain and logistics processes.",
-    tags: ["Current"]
+    tags: ["ongoing"]
   },
   {
-    title: "Capstone Portal",
+    title: "Eventune",
     image: {
-      url: "/assets/illustrations/business-3d-side-view-of-coffee-paper-cup-with-sleeve.png",
-      background: "bg-[#C49455]"
+      url: "/assets/illustrations/3d-fluency-electronic-music.png",
+      background: "bg-[#9EA3A9]",
+      dimensions: {
+        width: 95,
+        height: 95
+      }
     },
-    url: "https://capstone-portal.netlify.app/projects",
+    url: "https://eventune-development.vercel.app/",
     description:
-      "Capstone Portal allows students to submit their thesis on the internet, allowing professors to quickly review their project and immediately see what has to be changed.",
-    tags: ["Recent"]
+      "Eventune enables us to see list of upcoming music events near you, allowing you to experience a live performance of your favorite artists",
+    tags: ["ongoing"]
   },
+  // {
+  //   title: "Capstone Portal",
+  //   image: {
+  //     url: "/assets/illustrations/business-3d-side-view-of-coffee-paper-cup-with-sleeve.png",
+  //     background: "bg-[#C49455]"
+  //   },
+  //   url: "https://capstone-portal.netlify.app/projects",
+  //   description:
+  //     "Capstone Portal allows students to submit their thesis on the internet, allowing professors to quickly review their project and immediately see what has to be changed.",
+  //   tags: ["Recent"]
+  // },
   {
     title: "CosMos",
     image: {
@@ -51,12 +66,12 @@ const projects = [
 const Projects = () => {
   return (
     <section id="Collaborations" className="mt-[80px] px-4 xs:px-0">
-      <div className="flex place-items-center jutify-between mb-8 gap-8">
+      <div className="flex gap-8 mb-8 place-items-center jutify-between">
         {/* <div className="relative h-full">
-          <div className="absolute h-1/2 w-full -top-1/3 -translate-y-1/3 z-negative">
-            <div className="absolute mix-blend-multiply top-0 -right-9 w-72 h-72 bg-green-300 rounded-full filter blur-3xl opacity-70 dark:opacity-30 animate-grow"></div>
-            <div className="absolute mix-blend-multiply top-0 -right-4 w-72 h-72 bg-amber-200 rounded-full filter blur-3xl opacity-70 dark:opacity-30 animate-grow animtation-delay-2000"></div>
-            <div className="absolute mix-blend-multiply top-12 -left-12 w-72 h-72 bg-orange-300 rounded-full filter blur-3xl opacity-70 dark:opacity-30 animate-grow animation-delay-4000"></div>
+          <div className="absolute w-full h-1/2 -top-1/3 -translate-y-1/3 z-negative">
+            <div className="absolute top-0 bg-green-300 rounded-full mix-blend-multiply -right-9 w-72 h-72 filter blur-3xl opacity-70 dark:opacity-30 animate-grow"></div>
+            <div className="absolute top-0 rounded-full mix-blend-multiply -right-4 w-72 h-72 bg-amber-200 filter blur-3xl opacity-70 dark:opacity-30 animate-grow animtation-delay-2000"></div>
+            <div className="absolute bg-orange-300 rounded-full mix-blend-multiply top-12 -left-12 w-72 h-72 filter blur-3xl opacity-70 dark:opacity-30 animate-grow animation-delay-4000"></div>
           </div>
           <div className="max-[600px]:hidden">
             <Image
@@ -68,36 +83,39 @@ const Projects = () => {
           </div>
         </div> */}
         <div className="flex-1 text-center">
-          <h1 className="font-bold text-lg">Project</h1>
-          <h1 className="font-bold text-3xl">Collaborations</h1>
+          <h1 className="text-lg font-bold">Project</h1>
+          <h1 className="text-3xl font-bold">Collaborations</h1>
           <p className="mt-3 text-gray-500 dark:text-gray-400">
             Here are the projects on which I collaborated. These projects enabled me to get the necessary expertise and experience for my profession.
           </p>
         </div>
       </div>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-4 mt-14">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mt-14">
         {projects.map((project, index) => (
           <div key={`project-${index}`} className="relative transition duration-700 shadow-lg min-h-[200px] sm:max-w-none max-w-xs px-4 py-12 rounded-2xl bg-gray-100 dark:bg-slate-800 my-7 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100 dark:border-slate-700 sm:mx-0 mx-auto">
-            <div className="absolute -top-12 left-1/2 -translate-x-1/2">
-              <div className={`absolute animate-pulse origin-center rounded-full blur-xl h-[80px] w-[80px] opacity-80 dark:opacity-60 ${project.image.background}`}></div>
+            <div className="absolute -translate-x-1/2 -top-12 left-1/2 w-fit h-fit">
+              <div className={`absolute animate-pulse origin-center rounded-full blur-xl h-full w-full opacity-80 dark:opacity-60 ${project.image.background}`}></div>
               <Image
-                className="relative"
+                className="relative origin-center rotate-12"
                 alt="sample-project"
                 src={project.image.url}
-                height={80}
-                width={80}
+                height={project.image?.dimensions?.height ?? 80}
+                width={project.image?.dimensions?.width ?? 80}
               // className="p-1 rounded-lg shadow-lg"
               // style={{ background: project.image.background }}
               />
             </div>
-            <div className="relative top-1/2 -translate-y-1/2 text-center my-auto">
+            <div className="relative my-auto text-center -translate-y-1/2 top-1/2">
               <div>
-                <Link href={project.url} target="_blank" className="font-bold dark:text-gray-200 block mb-2 hover:underline underline-offset-4 decoration-dotted ">{project.title}</Link>
+                <div className="flex flex-col items-center justify-center gap-2 mb-3">
+                  <Link href={project.url} target="_blank" className="font-bold dark:text-gray-200 hover:underline underline-offset-4 decoration-dotted ">{project.title}</Link>
+                  {project.tags.includes("ongoing") ? <span className="px-2 text-xs tracking-wide uppercase bg-yellow-500 rounded-full dark:text-white bg-opacity-20">Ongoing</span> : null}
+                </div>
                 {/* <Link href={project.url} target="_blank" className="text-xs text-gray-400 dark:text-gray-400">
                   {project?.url?.substring(0, 30) || "www.sample.project.com"}
                 </Link> */}
               </div>
-              <p className="text-sm dark:text-gray-400 text-gray-500">{project.description.substring(0, 115)} . . . <Link href={project.url} target="_blank" className="text-sm dark:text-gray-400 text-gray-500 hover:underline underline-offset-4 decoration-dotted">[Read more]</Link> </p>
+              <p className="text-sm text-gray-500 dark:text-gray-400">{project.description.substring(0, 115)} . . . <Link href={project.url} target="_blank" className="text-sm text-gray-500 dark:text-gray-400 hover:underline underline-offset-4 decoration-dotted">[Learn more]</Link> </p>
             </div>
           </div>
         ))}
