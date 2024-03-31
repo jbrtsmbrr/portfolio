@@ -13,13 +13,13 @@ const projects = [
     url: "https://trackme.com.ph/products/logistics/",
     description:
       "TrackMe Suite is designed to enhance the operational efficiency of businesses through smart integration of location technology, information, and services. With capabilities ranging from fleet management to delivery monitoring that supports entire supply chain and logistics processes.",
-    tags: ["ongoing"]
+    status: "Completed & Maintaining"
   },
   {
     title: "Eventune",
     image: {
       url: "/assets/illustrations/3d-fluency-electronic-music.png",
-      background: "bg-[#9EA3A9]",
+      background: "bg-[#91C0CA]",
       dimensions: {
         width: 95,
         height: 95
@@ -28,7 +28,7 @@ const projects = [
     url: "https://eventune-development.vercel.app/",
     description:
       "Eventune enables us to see list of upcoming music events near you, allowing you to experience a live performance of your favorite artists",
-    tags: ["ongoing"]
+    status: "ongoing"
   },
   // {
   //   title: "Capstone Portal",
@@ -39,7 +39,7 @@ const projects = [
   //   url: "https://capstone-portal.netlify.app/projects",
   //   description:
   //     "Capstone Portal allows students to submit their thesis on the internet, allowing professors to quickly review their project and immediately see what has to be changed.",
-  //   tags: ["Recent"]
+  //   status: ["Recent"]
   // },
   {
     title: "CosMos",
@@ -50,17 +50,23 @@ const projects = [
     url: "https://www.facebook.com/CosMos.UCC/",
     description:
       "Android-based and Web-based Home Power Monitoring System [Consumption Monitoring System (CosMos)] is genuinely fitted for anyone who's taking the safeness of the house and for does who is conscious to their electric consumption seriously because of the electronic appliances used.",
-    tags: ["Old"]
+    status: "Completed"
   },
-  // {
-  //   title: "Petron: PDVIZ",
-  //   image: {
-  //     url: "/assets/logos/trackme-suite-logo.ico",
-  //     background: "rgba(255, 143, 0, 0.20)"
-  //   },
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, modi sapiente deserunt voluptatibus accusamus exercitationem facere molestiae expedita ad.",
-  // },
+  {
+    title: "TACTIC",
+    image: {
+      url: "/assets/illustrations/business-3d-planet-earth.png",
+      background: "bg-[#87C015]",
+      dimensions: {
+        width: 80,
+        height: 80
+      }
+    },
+    url: "/",
+    description:
+      "Store, analyze, and interpret geospatial data relevant to your business through location intelligence to make business decisions and generate valuable insights.",
+    status: "upcoming"
+  },
 ];
 
 const Projects = () => {
@@ -108,8 +114,8 @@ const Projects = () => {
             <div className="relative my-auto text-center -translate-y-1/2 top-1/2">
               <div>
                 <div className="flex flex-col items-center justify-center gap-2 mb-3">
-                  <Link href={project.url} target="_blank" className="font-bold dark:text-gray-200 hover:underline underline-offset-4 decoration-dotted ">{project.title}</Link>
-                  {project.tags.includes("ongoing") ? <span className="px-2 text-xs tracking-wide uppercase bg-yellow-500 rounded-full dark:text-white bg-opacity-20">Ongoing</span> : null}
+                  <Link href={project.url} target="_blank" className="font-bold tracking-wide dark:text-gray-200 hover:underline underline-offset-4 decoration-dotted">{project.title}</Link>
+                  <span className="px-2 text-xs tracking-wide uppercase bg-yellow-500 rounded-full dark:text-white bg-opacity-20">{project.status}</span>
                 </div>
                 {/* <Link href={project.url} target="_blank" className="text-xs text-gray-400 dark:text-gray-400">
                   {project?.url?.substring(0, 30) || "www.sample.project.com"}
