@@ -62,14 +62,14 @@ const skills: SkillCardProp[] = [
     label: "Tailwind",
     learning: false,
     background: "rgba(0, 157, 230, 0.055)",
-    type: "New/Exploring",
+    type: "Current",
   },
   {
     imageUrl: "/assets/icons/icons8-typescript.svg",
     label: "TypeScript",
     learning: false,
     background: "rgba(0, 157, 230, 0.055)",
-    type: "New/Exploring",
+    type: "Current",
   },
   {
     imageUrl: "/assets/icons/nextjs-2.svg",
@@ -132,7 +132,7 @@ const skills: SkillCardProp[] = [
     label: "Zustand",
     learning: false,
     background: "rgba(194, 123, 103, 0.066)",
-    type: "New/Exploring",
+    type: "Current",
   },
 ];
 
