@@ -10,7 +10,7 @@ import skills from "./skills";
 const HardSkills = () => {
   const [filter, setFilter] = useState([
     "Current",
-    "Heard of",
+    // "Heard of",
     "New/Exploring",
     "Old",
   ]);
