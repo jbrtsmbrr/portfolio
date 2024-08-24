@@ -62,10 +62,10 @@ const projects = [
         height: 80
       }
     },
-    url: "/",
+    url: "http://tactic-2-dev.webcast-inc.com.ph:3000/",
     description:
       "Store, analyze, and interpret geospatial data relevant to your business through location intelligence to make business decisions and generate valuable insights.",
-    status: "upcoming"
+    status: "ongoing"
   },
 ];
 
