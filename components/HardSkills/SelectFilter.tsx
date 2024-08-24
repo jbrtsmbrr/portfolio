@@ -6,7 +6,7 @@ import { TSelectedFilter, TSkillType } from "./types";
 const skillOptions: TSkillType[] = [
   { label: "Current", description: "These are the tools I'm currently using." },
   { label: "New/Exploring", description: "Currently studying tools." },
-  { label: "Heard of", description: "Tools that I've heard of but have yet to use." },
+  // { label: "Heard of", description: "Tools that I've heard of but have yet to use." },
   { label: "Old", description: "These are the tools that I have previously used for work as well." },
 ];
 
@@ -45,7 +45,7 @@ const SelectFilter = ({ value, onSelectedChanged }: TSelectedFilter) => {
           } absolute top-12 z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600`}
       >
         <ul
-          className="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200 text-left"
+          className="p-3 space-y-1 text-sm text-left text-gray-700 dark:text-gray-200"
           aria-labelledby="dropdownHelperButton"
         >
           {skillOptions.map((opt, index) => (
