@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import Image from "next/image";
 import SkillCard from "./SkillCard";
 import SelectFilter from "./SelectFilter";
-import { SkillCardProp, TSkillType } from "./types";
 import skills from "./skills";
 
 
