@@ -78,13 +78,13 @@ const skills: SkillCardProp[] = [
     background: "rgba(0, 0, 0, 0.055)",
     type: "New/Exploring",
   },
-  {
-    imageUrl: "/assets/icons/icons8-flutter.svg",
-    label: "Flutter",
-    learning: false,
-    background: "rgba(0, 199, 255, 0.077)",
-    type: "Heard of",
-  },
+  // {
+  //   imageUrl: "/assets/icons/icons8-flutter.svg",
+  //   label: "Flutter",
+  //   learning: false,
+  //   background: "rgba(0, 199, 255, 0.077)",
+  //   type: "Heard of",
+  // },
   {
     imageUrl: "/assets/icons/icons8-jquery.svg",
     label: "jQuery",
