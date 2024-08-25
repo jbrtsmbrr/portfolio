@@ -141,6 +141,13 @@ const skills: SkillCardProp[] = [
     background: "rgba(200, 200, 200, 0.077)",
     type: "Current",
   },
+  {
+    imageUrl: "/assets/icons/icons8-redis.svg",
+    label: "Redis",
+    learning: true,
+    background: "rgba(223, 53, 50, 0.077)",
+    type: "New/Exploring",
+  }
 ];
 
 export default skills;
