@@ -58,6 +58,13 @@ const skills: SkillCardProp[] = [
     type: "Current",
   },
   {
+    imageUrl: "/assets/icons/shadcn.svg",
+    label: "Shadcn",
+    learning: false,
+    background: "rgba(194, 123, 103, 0.066)",
+    type: "Current",
+  },
+  {
     imageUrl: "/assets/icons/icons8-tailwind-css.svg",
     label: "Tailwind",
     learning: false,
