@@ -48,7 +48,7 @@ const HardSkills = () => {
       </div>
       <div className="relative grid max-w-lg grid-cols-2 gap-2 mx-auto md:grid-cols-3 md:max-w-3xl lg:grid-cols-4 lg:max-w-6xl place-items-center">
         {skills.filter(skill => filter.includes(skill.type)).map((skill, index) => (
-          <SkillCard key={`skill-${index}`} {...skill} />
+          <SkillCard key={`skill-${skill.label}`} {...skill} />
         ))}
       </div>
     </section>
