@@ -75,7 +75,7 @@ const skills: SkillCardProp[] = [
     imageUrl: "/assets/icons/icons8-nextjs.svg",
     label: "Next JS",
     learning: true,
-    background: "rgba(0, 0, 0, 0.055)",
+    background: "rgba(255, 255, 255, 0.055)",
     type: "New/Exploring",
   },
   // {
