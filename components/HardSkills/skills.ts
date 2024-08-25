@@ -106,13 +106,13 @@ const skills: SkillCardProp[] = [
     background: "rgba(0, 121, 107, 0.055)",
     type: "Old",
   },
-  {
-    imageUrl: "/assets/icons/icons8-redux.svg",
-    label: "Redux",
-    learning: false,
-    background: "rgba(132, 85, 192, 0.077)",
-    type: "Heard of",
-  },
+  // {
+  //   imageUrl: "/assets/icons/icons8-redux.svg",
+  //   label: "Redux",
+  //   learning: false,
+  //   background: "rgba(132, 85, 192, 0.077)",
+  //   type: "Heard of",
+  // },
   {
     imageUrl: "/assets/icons/icons8-sass.svg",
     label: "Sass",
