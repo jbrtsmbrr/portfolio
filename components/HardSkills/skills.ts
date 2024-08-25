@@ -134,6 +134,13 @@ const skills: SkillCardProp[] = [
     background: "rgba(194, 123, 103, 0.066)",
     type: "Current",
   },
+  {
+    imageUrl: "/assets/icons/icons8-google-cloud.svg",
+    label: "Google Cloud",
+    learning: false,
+    background: "rgba(200, 200, 200, 0.077)",
+    type: "Current",
+  },
 ];
 
 export default skills;
