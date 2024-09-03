@@ -27,8 +27,6 @@ const Projects = () => {
                 src={project.image.url}
                 height={project.image?.dimensions?.height ?? 80}
                 width={project.image?.dimensions?.width ?? 80}
-              // className="p-1 rounded-lg shadow-lg"
-              // style={{ background: project.image.background }}
               />
             </div>
             <div className="relative my-auto text-center -translate-y-1/2 top-1/2">
