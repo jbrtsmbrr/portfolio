@@ -73,21 +73,6 @@ const Projects = () => {
   return (
     <section id="Collaborations" className="mt-[80px] px-4 xs:px-0">
       <div className="flex gap-8 mb-8 place-items-center jutify-between">
-        {/* <div className="relative h-full">
-          <div className="absolute w-full h-1/2 -top-1/3 -translate-y-1/3 z-negative">
-            <div className="absolute top-0 bg-green-300 rounded-full mix-blend-multiply -right-9 w-72 h-72 filter blur-3xl opacity-70 dark:opacity-30 animate-grow"></div>
-            <div className="absolute top-0 rounded-full mix-blend-multiply -right-4 w-72 h-72 bg-amber-200 filter blur-3xl opacity-70 dark:opacity-30 animate-grow animtation-delay-2000"></div>
-            <div className="absolute bg-orange-300 rounded-full mix-blend-multiply top-12 -left-12 w-72 h-72 filter blur-3xl opacity-70 dark:opacity-30 animate-grow animation-delay-4000"></div>
-          </div>
-          <div className="max-[600px]:hidden">
-            <Image
-              alt="learning"
-              src="/assets/illustrations/3d-casual-life-group-of-young-people-discussing-something-while-working.png"
-              width={250}
-              height={250}
-            />
-          </div>
-        </div> */}
         <div className="flex-1 text-center">
           <h1 className="text-lg font-bold">Project</h1>
           <h1 className="text-3xl font-bold">Collaborations</h1>
