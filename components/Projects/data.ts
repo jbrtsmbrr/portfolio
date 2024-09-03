@@ -1,3 +1,20 @@
+interface ProjectImage {
+  url: string;
+  background?: string;
+  dimensions?: {
+    width: number;
+    height: number;
+  };
+}
+
+export interface Project {
+  title: string;
+  image: ProjectImage;
+  url: string;
+  description: string;
+  status: string;
+}
+
 const projects = [
     {
       title: "TrackMe Suite",
