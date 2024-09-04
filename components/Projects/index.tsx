@@ -61,7 +61,7 @@ const Projects = () => {
 
               <button
                 onClick={() => setSelectedProject(project)}
-                className="group relative left-1/2 text-xs flex items-center gap-2 -translate-x-1/2 p-2 px-4 rounded-full border-2 shadow-lg border-gray-200 dark:border-slate-600 tracking-wide hover:shadow-xl"
+                className="group relative left-1/2 text-xs flex items-center gap-2 -translate-x-1/2 p-2 px-4 rounded-full border shadow-lg border-gray-300 dark:border-slate-600 tracking-wide hover:shadow-xl"
               >
                 <p>Learn more</p>
                 <ChevronRight size={14} color="gray" className="group-hover:translate-x-1 transition-transform duration-200" />
