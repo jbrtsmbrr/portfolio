@@ -2,8 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import projects from "./data";
+import React, { useState } from "react";
+import projects, { Project } from "./data";
+import { ChevronRight } from "lucide-react";
+import ProjectInfo from "./ProjectInfo";
 
 
 const Projects = () => {
