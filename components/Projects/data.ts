@@ -29,10 +29,15 @@ const projects: Project[] = [
       // background: "drop-shadow-[0px_10px_30px_rgba(255,143,0,1)]",
       background: "bg-[#F7C400]"
     },
-    url: "https://trackme.com.ph/products/logistics/",
+    url: "https://tmsuite.trackme.com.ph",
     description:
-      "TrackMe Suite is designed to enhance the operational efficiency of businesses through smart integration of location technology, information, and services. With capabilities ranging from fleet management to delivery monitoring that supports entire supply chain and logistics processes.",
-    status: "Completed & Maintaining"
+      "It boosts business efficiency by integrating location technology with services, offering solutions from fleet management to delivery monitoring across the supply chain.",
+    status: "Completed & Maintaining",
+    description_full: "TrackMe Suite is designed to enhance the operational efficiency of businesses through smart integration of location technology, information, and services. With capabilities ranging from fleet management to delivery monitoring that supports entire supply chain and logistics processes.",
+    repository_url: undefined,
+    banner_image: "/assets/projects/trackme-suite.png",
+    technologies: ["JavaScript", "React", "Material UI", "Node JS", "Google Maps API"],
+    other_links: ["https://trackme.com.ph/products/logistics", "https://webcast-inc.com.ph"]
   },
   {
     title: "Eventune",
