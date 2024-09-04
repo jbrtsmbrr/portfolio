@@ -49,10 +49,14 @@ const projects: Project[] = [
         height: 95
       }
     },
-    url: "https://eventune-development.vercel.app/",
+    url: "https://eventune-development.vercel.app",
     description:
       "Eventune enables us to see list of upcoming music events near you, allowing you to experience a live performance of your favorite artists",
-    status: "ongoing"
+    status: "ongoing",
+    description_full: "Eventune provides the ability to explore a comprehensive list of upcoming music events in your vicinity, granting you the opportunity to immerse yourself in the live performances of your favorite artists and bands, all within a user-friendly platform that keeps you informed and connected to the vibrant local music scene.",
+    repository_url: "https://github.com/jbrtsmbrr/eventune",
+    banner_image: "/assets/projects/eventune.png",
+    technologies: ["Next JS", "TypeScript", "Tailwind"]
   },
   // {
   //   title: "Capstone Portal",
