@@ -75,10 +75,15 @@ const projects: Project[] = [
       url: "/assets/illustrations/casual-life-3d-game-controller.png",
       background: "bg-[#8AC2CA]"
     },
-    url: "https://www.facebook.com/CosMos.UCC/",
+    url: "https://www.facebook.com/CosMos.UCC",
     description:
-      "Android-based and Web-based Home Power Monitoring System [Consumption Monitoring System (CosMos)] is genuinely fitted for anyone who's taking the safeness of the house and for does who is conscious to their electric consumption seriously because of the electronic appliances used.",
-    status: "Completed"
+      "An Android and web-based Home Power Monitoring System, is ideal for those serious about home safety and monitoring their electricity usage from electronic appliances.",
+    status: "Completed",
+    description_full: "Android-based and Web-based Home Power Monitoring System [Consumption Monitoring System (CosMos)] is genuinely fitted for anyone who's taking the safeness of the house and for does who is conscious to their electric consumption seriously because of the electronic appliances used.",
+    repository_url: undefined,
+    banner_image: "/assets/projects/cosmos.png",
+    other_links: ["https://www.facebook.com/CosMos.UCC"],
+    technologies: ["PHP", "JavaScript", "Arduino", "Android Studio (Java)", "MySQL"]
   },
   {
     title: "TACTIC",
