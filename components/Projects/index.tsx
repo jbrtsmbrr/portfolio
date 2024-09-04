@@ -51,7 +51,21 @@ const Projects = () => {
                   {project?.url?.substring(0, 30) || "www.sample.project.com"}
                 </Link> */}
               </div>
-              <p className="text-sm text-gray-500 dark:text-gray-400">{project.description.substring(0, 115)} . . . <Link href={project.url} target="_blank" className="text-sm text-gray-500 dark:text-gray-400 hover:underline underline-offset-4 decoration-dotted">[Learn more]</Link> </p>
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                {project.description.substring(0, 100)} . . .
+              </p>
+              {/* <button className="relative left-1/2 -translate-x-1/2 text-xs text-white p-2 px-4 max-h-[40px] rounded-full bg-gradient-to-l from-blue-700/75 to-blue-400 hover:to-blue-700/75 hover:no-underline flex items-center gap-2 tracking-wider transition-all duration-200 ease-in-out uppercase shadow-[inset_0px_5px_10px_-10px_#000,inset_0px_-5px_10px_-10px_#f1f1f1]">
+                <p>Learn more</p>
+                <ChevronRight size={14} />
+              </button> */}
+
+              <button
+                onClick={() => setSelectedProject(project)}
+                className="group relative left-1/2 text-xs flex items-center gap-2 -translate-x-1/2 p-2 px-4 rounded-full border-2 shadow-lg border-gray-200 dark:border-slate-600 tracking-wide hover:shadow-xl"
+              >
+                <p>Learn more</p>
+                <ChevronRight size={14} color="gray" className="group-hover:translate-x-1 transition-transform duration-200" />
+              </button>
             </div>
           </div>
         ))}
