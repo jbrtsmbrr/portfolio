@@ -39,7 +39,7 @@ const Projects = () => {
                 width={project.image?.dimensions?.width ?? 80}
               />
             </div>
-            <div className="relative my-auto text-center -translate-y-1/2 top-1/2">
+            <div className="relative my-auto text-center -translate-y-1/2 top-1/2 space-y-4">
               <div>
                 <div className="flex flex-col items-center justify-center gap-2 mb-3">
                   <Link href={project.url} target="_blank" className="font-bold tracking-wide dark:text-gray-200 hover:underline underline-offset-4 decoration-dotted">{project.title}</Link>
