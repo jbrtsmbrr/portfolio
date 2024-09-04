@@ -12,7 +12,13 @@ export interface Project {
   image: ProjectImage;
   url: string;
   description: string;
+  description_full: string;
   status: string;
+  banner_image: string;
+  technologies: string[];
+  repository_url?: string;
+  other_links?: string[];
+  theme?: string;
 }
 
 const projects: Project[] = [
