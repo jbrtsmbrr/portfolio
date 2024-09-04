@@ -7,6 +7,12 @@ import projects from "./data";
 
 
 const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+  const handleProjectSelected = (project: Project | null) => {
+    setSelectedProject(project)
+  }
+
   return (
     <section id="Collaborations" className="mt-[80px] px-4 xs:px-0">
       <div className="flex gap-8 mb-8 place-items-center jutify-between">
