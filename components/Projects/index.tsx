@@ -56,6 +56,8 @@ const Projects = () => {
           </div>
         ))}
       </div>
+      {/* SHEET */}
+      <ProjectInfo project={selectedProject} onSelectedProjectChange={handleProjectSelected} />
     </section>
   );
 };
