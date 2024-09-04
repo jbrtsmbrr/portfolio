@@ -95,10 +95,15 @@ const projects: Project[] = [
         height: 80
       }
     },
-    url: "http://tactic-2-dev.webcast-inc.com.ph:3000/",
+    url: "http://tactic-2-dev.webcast-inc.com.ph:3000",
     description:
       "Store, analyze, and interpret geospatial data relevant to your business through location intelligence to make business decisions and generate valuable insights.",
-    status: "ongoing"
+    status: "ongoing",
+    description_full: "Harness the power of location intelligence to store, analyze, and interpret geospatial data that is crucial to your business operations, enabling you to make informed decisions and generate valuable insights that drive strategic growth, optimize processes, and enhance overall business performance.",
+    repository_url: "",
+    banner_image: "/assets/projects/tactic.png",
+    technologies: ["TypeScript", "React", "GraphQL", "Node JS", "Shadcn"],
+    other_links: ["https://webcast-inc.com.ph"]
   },
 ];
 
