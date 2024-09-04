@@ -15,6 +15,7 @@ const Projects = () => {
 
   return (
     <section id="Collaborations" className="mt-[80px] px-4 xs:px-0">
+      {/* TITLE */}
       <div className="flex gap-8 mb-8 place-items-center jutify-between">
         <div className="flex-1 text-center">
           <h1 className="text-lg font-bold">Project</h1>
@@ -24,6 +25,7 @@ const Projects = () => {
           </p>
         </div>
       </div>
+      {/* PROJECTS */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mt-14">
         {projects.map((project, index) => (
           <div key={`project-${index}`} className="relative transition duration-700 shadow-lg min-h-[200px] sm:max-w-none max-w-xs px-4 py-12 rounded-2xl bg-gray-100 dark:bg-slate-800 my-7 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10 border border-gray-100 dark:border-slate-700 sm:mx-0 mx-auto">
