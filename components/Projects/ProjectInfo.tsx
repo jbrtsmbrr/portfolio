@@ -23,11 +23,24 @@ const ProjectInfo = ({
             <div className="sticky top-0 inset-x-0 z-10 flex items-center gap-2 p-3 py-3 backdrop-blur-[24px] bg-white/30 dark:bg-slate-800/30 border-b border-white/5">
               <p
                 onClick={() => onSelectedProjectChange(null)}
-                className="flex items-center gap-2 text-xs tracking-wide font-semibold hover:bg-slate-900/30 cursor-pointer p-2 px-3 bg-white/5 transition-all duration-200 ease-in-out rounded-lg border border-white/5"
+                className="flex items-center gap-2 text-xs tracking-wide font-semibold dark:hover:bg-slate-700/70 cursor-pointer p-2 px-3 bg-white/5 transition-all duration-200 ease-in-out rounded-lg border border-white/5"
               >
-                <ArrowLeft size={16}  />
+                <ArrowLeft size={16} />
                 Back to projects
               </p>
+              {project.url && (
+                <div
+                  className={`flex items-center gap-2 text-xs tracking-wide font-semibold dark:hover:bg-slate-700/70 cursor-pointer p-2 px-3 bg-white/5 transition-all duration-200 ease-in-out rounded-lg border border-white/5`}
+                >
+                  <Link
+                    target="_blank"
+                    href={project.url}
+                  >
+                    Open Project
+                  </Link>
+                  <ExternalLink size={16} className="text-white" />
+                </div>
+              )}
             </div>
             {/* Main Content */}
             <div className="relative px-6 pb-6">
@@ -37,7 +50,9 @@ const ProjectInfo = ({
                   <p className="tracking-normal font-bold text-lg">
                     {project.title}
                   </p>
-                  <p className="tracking-normal text-sm">{project.description}</p>
+                  <p className="tracking-normal text-sm">
+                    {project.description}
+                  </p>
                 </div>
                 <Image
                   alt="eventune"
