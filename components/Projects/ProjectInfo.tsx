@@ -120,21 +120,6 @@ const ProjectInfo = ({
               )}
             </div>
           </div>
-          {/* Footer */}
-          {project.url && (
-            <div
-              className={`bg-blue-600 h-[80px] w-full flex items-center justify-center gap-4 shadow-md`}
-            >
-              <Link
-                target="_blank"
-                href={project.url}
-                className="font-semibold text-md tracking-wide text-white hover:underline underline-offset-2"
-              >
-                Open Project
-              </Link>
-              <ExternalLink size={18} className="text-white" />
-            </div>
-          )}
         </SheetContent>
       )}
     </Sheet>
