@@ -20,8 +20,7 @@ const ProjectInfo = ({
         <SheetContent className="fixed sm:max-w-none w-[580px] flex flex-col p-0 gap-0 border-none">
           <div className="relative overflow-y-auto max-h-full">
             {/* Header */}
-            <div className="sticky top-0 inset-x-0 z-10 flex items-center gap-2 p-3 py-3 backdrop-blur-[7px] bg-white/30 dark:bg-slate-800/30 border-b border-white/5">
-              
+            <div className="sticky top-0 inset-x-0 z-10 flex items-center gap-2 p-3 py-3 backdrop-blur-[24px] bg-white/30 dark:bg-slate-800/30 border-b border-white/5">
               <p
                 onClick={() => onSelectedProjectChange(null)}
                 className="flex items-center gap-2 text-xs tracking-wide font-semibold hover:bg-slate-900/30 cursor-pointer p-2 px-3 bg-white/5 transition-all duration-200 ease-in-out rounded-lg border border-white/5"
