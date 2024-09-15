@@ -89,7 +89,7 @@ const ProjectInfo = ({
                 <Link
                   target="_blank"
                   href={project.url}
-                  className="hover:underline underline-offset-0 w-fit tracking-tight font-semibold"
+                  className="hover:underline underline-offset-2 w-fit tracking-normal font-medium text-sm"
                 >
                   {project.url}
                 </Link>
