@@ -69,7 +69,7 @@ const ProjectInfo = ({
               </div>
               {/* Technologies */}
               <div className="h-fit flex flex-col gap-4 pt-4 pb-2">
-                <p className="tracking-normal font-bold text-2xl">
+                <p className="tracking-normal font-bold text-lg">
                   Technologies
                 </p>
                 <div className="flex gap-2">
