@@ -98,8 +98,8 @@ const ProjectInfo = ({
               {project.repository_url && (
                 <div className="h-fit flex flex-col gap-2 pt-4 pb-2">
                   <div className="flex gap-2 items-center">
-                    <Github size={18} />
-                    <p className="tracking-normal font-bold text-2xl">
+                    <Github size={16} />
+                    <p className="tracking-normal font-bold text-lg">
                       Repository
                     </p>
                   </div>
