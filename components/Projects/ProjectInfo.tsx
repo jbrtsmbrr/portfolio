@@ -74,7 +74,7 @@ const ProjectInfo = ({
                 </p>
                 <div className="flex gap-2">
                   {project.technologies.map((tech) => (
-                    <span className="py-1 px-3 text-xs tracking-wide font-semibold bg-yellow-500 rounded-full dark:text-white bg-opacity-20 border border-yellow-500">
+                    <span className="py-1 px-3 text-xs tracking-wide font-semibold bg-slate-400 rounded-full dark:text-white bg-opacity-20 border border-slate-600">
                       {tech}
                     </span>
                   ))}
