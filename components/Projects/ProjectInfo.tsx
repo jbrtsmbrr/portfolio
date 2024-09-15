@@ -63,9 +63,9 @@ const ProjectInfo = ({
                 />
               </div>
               {/* About */}
-              <div className="h-fit flex flex-col gap-4 pt-4 pb-2">
-                <p className="tracking-normal font-bold text-2xl">About</p>
-                <p className="tracking-tight">{project.description_full}</p>
+              <div className="h-fit flex flex-col gap-2 pt-4 pb-2">
+                <p className="tracking-normal font-bold text-lg">About</p>
+                <p className="tracking-normal text-sm">{project.description_full}</p>
               </div>
               {/* Technologies */}
               <div className="h-fit flex flex-col gap-4 pt-4 pb-2">
