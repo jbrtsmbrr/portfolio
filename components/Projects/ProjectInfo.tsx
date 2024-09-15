@@ -36,7 +36,7 @@ const ProjectInfo = ({
                     target="_blank"
                     href={project.url}
                   >
-                    Open Project
+                    Live Demo
                   </Link>
                   <ExternalLink size={16} className="text-white" />
                 </div>
