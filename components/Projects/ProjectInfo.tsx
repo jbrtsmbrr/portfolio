@@ -23,14 +23,14 @@ const ProjectInfo = ({
             <div className="sticky top-0 inset-x-0 z-10 flex items-center gap-2 p-3 py-3 backdrop-blur-[16px] dark:backdrop-blur-[16px] bg-white/5 dark:bg-slate-800/50 border-b border-gray-900/10 dark:border-white/5">
               <p
                 onClick={() => onSelectedProjectChange(null)}
-                className="flex items-center gap-2 text-xs tracking-wide font-semibold dark:hover:bg-slate-700/70 cursor-pointer p-2 px-3 bg-white/5 transition-all duration-200 ease-in-out rounded-lg border border-white/5"
+                className="flex items-center gap-2 text-xs tracking-wide font-semibold hover:bg-slate-800 dark:hover:bg-slate-200 hover:text-white dark:hover:text-black cursor-pointer p-2 px-3 bg-gray-500/20 dark:bg-slate-50/5 transition-all duration-500 ease-in-out rounded-lg border border-white/10"
               >
                 <ArrowLeft size={16} />
                 Back to projects
               </p>
               {project.url && (
                 <div
-                  className={`flex items-center gap-2 text-xs tracking-wide font-semibold dark:hover:bg-slate-700/70 cursor-pointer p-2 px-3 bg-white/5 transition-all duration-200 ease-in-out rounded-lg border border-white/5`}
+                  className="flex items-center gap-2 text-xs tracking-wide font-semibold hover:bg-slate-800 dark:hover:bg-slate-200 hover:text-white dark:hover:text-black cursor-pointer p-2 px-3 bg-gray-500/20 dark:bg-slate-50/5 transition-all duration-500 ease-in-out rounded-lg border border-white/10"
                 >
                   <Link
                     target="_blank"
@@ -38,7 +38,7 @@ const ProjectInfo = ({
                   >
                     Live Demo
                   </Link>
-                  <ExternalLink size={16} className="text-white" />
+                  <ExternalLink size={16} />
                 </div>
               )}
             </div>
