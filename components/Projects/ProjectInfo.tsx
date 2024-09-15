@@ -115,8 +115,8 @@ const ProjectInfo = ({
               {project.other_links && (
                 <div className="h-fit flex flex-col gap-2 pt-4 pb-2">
                   <div className="flex gap-2 items-center">
-                    <LinkIcon size={18} />
-                    <p className="tracking-normal font-bold text-2xl">
+                    <LinkIcon size={16} />
+                    <p className="tracking-normal font-bold text-lg">
                       Related links
                     </p>
                   </div>
