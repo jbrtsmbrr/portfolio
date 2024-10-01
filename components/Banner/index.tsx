@@ -5,8 +5,13 @@ const Banner = () => {
     <section id="Home" className="relative grid grid-cols-2 md:h-[480px] gap-4 px-4 xs:px-0">
       <div className="flex flex-col-reverse gap-4 md:flex-col">
         <div className="flex justify-center gap-4 md:absolute md:h-full md:-left-14 lg:-left-20 md:flex-col">
-          <a href="https://gitlab.com/jbrtsmbrr" target="_blank">
-            <Image alt="github" src="/assets/icons/icons8-gitlab.svg" width={27} height={27} />
+          <a href="https://github.com/jbrtsmbrr" target="_blank">
+            <Image
+              alt="github"
+              src="/assets/icons/icons8-github.svg"
+              width={25}
+              height={25}
+            />
           </a>
           <a href="https://www.linkedin.com/in/joe-bert-sembrero-0a7977198" target="_blank">
             <Image alt="github" src="/assets/icons/icons8-linkedin.svg" width={25} height={25} />
