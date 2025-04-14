@@ -23,11 +23,11 @@ const Banner = () => {
         <div className="flex flex-col justify-center gap-8 md:h-full">
           <div className="space-y-2">
             <h1 className="text-3xl font-bold">
-              Hi, I'm Joe Bert
+              Hi, I'm Joebert
             </h1>
             <h3 className="text-md text-gray-500 dark:text-gray-400 font-semibold tracking-[0.020em]">Frontend<span className="px-2 text-xl text-gray-400 dark:text-gray-500">&bull;</span>Backend Developer</h3>
             <p className="text-gray-500 text-md dark:text-gray-400">
-              Currently, I am working as frontend developer at <a href="https://webcast-inc.com.ph/" target="_blank" className="hover:underline underline-offset-4 decoration-dotted">WebCast Technologies Inc.</a> 🐱‍🏍
+              Currently, I am working as Sr. Full Stack Developer at <a href="https://webcast-inc.com.ph/" target="_blank" className="hover:underline underline-offset-4 decoration-dotted">Webcast Technologies, Inc.</a> 🐱‍🏍
             </p>
           </div>
           <div className="flex flex-col gap-4 md:flex-row">

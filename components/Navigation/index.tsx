@@ -33,7 +33,7 @@ const Menu = ({ onPageNavigate }: { onPageNavigate: (section: TMenu) => void }) 
           {menu.map((m, index) => (
             <li key={`sm-menu-${index}`}>
               <span
-                className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer"
+                className="block px-4 py-2 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                 onClick={() => onPageNavigate(m)}
               >
                 {m.name}
@@ -96,13 +96,13 @@ const Navigation = () => {
 
   return (
     <section id="header-navigation" className="sticky top-0 z-50 backdrop-blur-[6px] px-4 sm:px-0">
-      <div className="grid grid-cols-4 py-4 max-w-lg mx-auto md:max-w-2xl lg:max-w-3xl box-border items-center">
+      <div className="box-border grid items-center max-w-lg grid-cols-4 py-4 mx-auto md:max-w-2xl lg:max-w-3xl">
         <div>
-          <Link href="/" className="font-bold">Joe Bert</Link>
+          <Link href="/" className="font-bold">Joebert</Link>
         </div>
         <div className="col-span-3 ml-auto">
           {/* Large Screen Menu */}
-          <ul className="hidden lg:flex gap-4 items-center">
+          <ul className="items-center hidden gap-4 lg:flex">
             {menu.map((m, index) => (
               <li key={`lg-menu-${index}`} className={`${selected.name === m.name ? "font-semibold dark:text-gray-100" : "text-gray-600 dark:text-gray-400"}`}>
                 <span onClick={() => setSelected(m)} className="cursor-pointer">
@@ -116,7 +116,7 @@ const Navigation = () => {
             </li>
           </ul>
           {/* Small Screen Menu */}
-          <ul className="flex lg:hidden gap-4 items-center">
+          <ul className="flex items-center gap-4 lg:hidden">
             <li>
               <Menu onPageNavigate={setSelected} />
             </li>
