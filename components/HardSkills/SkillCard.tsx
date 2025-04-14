@@ -13,10 +13,10 @@ const SkillCard = ({
       transition duration-700 ${learning ? "border border-slate-400 border-dashed dark:border-slate-600" : ""
         }`}
     >
-      <span style={{ background }} className="p-1 rounded-lg min-h-full flex shadow-md">
+      <span style={{ background }} className="flex min-h-full p-1 rounded-lg shadow-md">
         <Image src={imageUrl} alt={label} width={30} height={30} />
       </span>
-      <span className="text-sm font-medium text-gray-600 dark:text-gray-100 transition duration-700">{label}</span>
+      <span className="text-sm font-normal text-gray-600 transition duration-100 dark:text-gray-100">{label}</span>
     </div>
   );
 };
