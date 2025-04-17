@@ -95,7 +95,7 @@ const projects: Project[] = [
         height: 80
       }
     },
-    url: "http://tactic-2-dev.webcast-inc.com.ph:3000",
+    url: "https://dev-tactic.webcast-inc.com.ph",
     description:
       "Store, analyze, and interpret geospatial data relevant to your business through location intelligence to make business decisions and generate valuable insights.",
     status: "ongoing",
