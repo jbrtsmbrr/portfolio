@@ -31,19 +31,19 @@ const Footer = () => {
 
   return (
     <section id="Footer" className="relative box-border h-[300px]">
-      <div className="relative flex place-items-center jutify-between mb-8 gap-8">
+      <div className="relative flex gap-8 mb-8 place-items-center jutify-between">
         <div className="relative h-full">
-          <div className="absolute h-1/2 w-full -top-1/3 -translate-y-1/3 z-negative">
-            <div className="absolute mix-blend-multiply top-0 -right-9 w-72 h-72 bg-blue-300 rounded-full filter blur-3xl opacity-70 dark:opacity-30 animate-grow"></div>
-            <div className="absolute mix-blend-multiply top-0 -right-4 w-72 h-72 bg-gray-200 rounded-full filter blur-3xl opacity-70 dark:opacity-20 animate-grow animtation-delay-2000"></div>
-            <div className="absolute mix-blend-multiply top-12 -left-12 w-72 h-72 bg-pink-300 rounded-full filter blur-3xl opacity-70 dark:opacity-30 animate-grow animation-delay-4000"></div>
+          <div className="absolute w-full h-1/2 -top-1/3 -translate-y-1/3 z-negative">
+            <div className="absolute top-0 bg-blue-300 rounded-full mix-blend-multiply -right-9 w-72 h-72 filter blur-3xl opacity-70 dark:opacity-30 animate-grow"></div>
+            <div className="absolute top-0 bg-gray-200 rounded-full mix-blend-multiply -right-4 w-72 h-72 filter blur-3xl opacity-70 dark:opacity-20 animate-grow animtation-delay-2000"></div>
+            <div className="absolute bg-pink-300 rounded-full mix-blend-multiply top-12 -left-12 w-72 h-72 filter blur-3xl opacity-70 dark:opacity-30 animate-grow animation-delay-4000"></div>
           </div>
         </div>
       </div>
-      <div className="absolute left-0 w-full h-full bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 shadow-lg flex flex-col sm:items-center items-right justify-center gap-4 px-6">
-        <h1 className="text-xl font-bold sm:text-center text-right">Joe Bert</h1>
+      <div className="absolute left-0 flex flex-col justify-center w-full h-full gap-4 px-6 shadow-lg bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 sm:items-center items-right">
+        <h1 className="text-xl font-bold text-right sm:text-center">Joebert</h1>
         <div>
-          <ul className="grid sm:grid-cols-6 grid-cols-2 sm:gap-0 gap-2 sm:justify-center justify-end sm:items-center">
+          <ul className="grid justify-end grid-cols-2 gap-2 sm:grid-cols-6 sm:gap-0 sm:justify-center sm:items-center">
             {menu.map((m, index) => (
               <li key={`menu-footer-${index}`} className={`text-gray-600 dark:text-gray-400 col-span-1 sm:text-center text-right`}>
                 <span onClick={() => setCurrentSection(m)} className="cursor-pointer">
@@ -53,7 +53,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className="my-4 sm:ml-0 ml-auto">
+        <div className="my-4 ml-auto sm:ml-0">
           <ul className="flex gap-4">
             <li>
               <a href="https://github.com/jbrtsmbrr" target="_blank">
@@ -93,7 +93,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <p className="absolute bottom-1 sm:left-1/2 sm:-translate-x-1/2 text-slate-400 left-auto sm:right-auto right-7">Joe Bert &copy; {currentDate.getFullYear()}</p>
+        <p className="absolute left-auto bottom-1 sm:left-1/2 sm:-translate-x-1/2 text-slate-400 sm:right-auto right-7">Joebert &copy; {currentDate.getFullYear()}</p>
       </div>
     </section>
   );
