@@ -158,9 +158,16 @@ const skills: SkillCardProp[] = [
   {
     imageUrl: "/assets/icons/rabbitmq-logo.svg",
     label: "RabbitMQ",
-    learning: true,
+    learning: false,
     background: "rgba(255, 98, 0, 0.055)",
-    type: 'New/Exploring'
+    type: 'Current'
+  },
+  {
+    imageUrl: "/assets/icons/docker.svg",
+    label: "Docker",
+    learning: false,
+    background: "rgba(0, 157, 230, 0.055)",
+    type: 'Current'
   }
 ];
 
