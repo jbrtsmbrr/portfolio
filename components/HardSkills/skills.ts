@@ -20,7 +20,7 @@ const skills: SkillCardProp[] = [
     label: "Node JS",
     learning: false,
     background: "rgba(94, 170, 98.055, 0.077)",
-    type: "Old",
+    type: "Current",
   },
   {
     imageUrl: "/assets/icons/icons8-html-5.svg",
@@ -111,7 +111,7 @@ const skills: SkillCardProp[] = [
     label: "MySQL",
     learning: false,
     background: "rgba(0, 121, 107, 0.055)",
-    type: "Old",
+    type: "Current",
   },
   // {
   //   imageUrl: "/assets/icons/icons8-redux.svg",
