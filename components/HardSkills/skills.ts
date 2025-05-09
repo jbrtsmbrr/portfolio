@@ -2,15 +2,8 @@ import { SkillCardProp } from "./types";
 
 const skills: SkillCardProp[] = [
   {
-    imageUrl: "/assets/icons/icons8-html-5.svg",
-    label: "HTML",
-    learning: false,
-    background: "rgba(255, 98, 0, 0.055)",
-    type: "Current",
-  },
-  {
-    imageUrl: "/assets/icons/icons8-css3.svg",
-    label: "CSS",
+    imageUrl: "/assets/icons/icons8-typescript.svg",
+    label: "TypeScript",
     learning: false,
     background: "rgba(0, 157, 230, 0.055)",
     type: "Current",
@@ -28,6 +21,20 @@ const skills: SkillCardProp[] = [
     learning: false,
     background: "rgba(94, 170, 98.055, 0.077)",
     type: "Old",
+  },
+  {
+    imageUrl: "/assets/icons/icons8-html-5.svg",
+    label: "HTML",
+    learning: false,
+    background: "rgba(255, 98, 0, 0.055)",
+    type: "Current",
+  },
+  {
+    imageUrl: "/assets/icons/icons8-css3.svg",
+    label: "CSS",
+    learning: false,
+    background: "rgba(0, 157, 230, 0.055)",
+    type: "Current",
   },
   {
     imageUrl: "/assets/icons/icons8-react-native.svg",
@@ -67,13 +74,6 @@ const skills: SkillCardProp[] = [
   {
     imageUrl: "/assets/icons/icons8-tailwind-css.svg",
     label: "Tailwind",
-    learning: false,
-    background: "rgba(0, 157, 230, 0.055)",
-    type: "Current",
-  },
-  {
-    imageUrl: "/assets/icons/icons8-typescript.svg",
-    label: "TypeScript",
     learning: false,
     background: "rgba(0, 157, 230, 0.055)",
     type: "Current",
