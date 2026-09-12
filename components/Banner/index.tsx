@@ -22,12 +22,12 @@ const Banner = () => {
         </div>
         <div className="flex flex-col justify-center gap-8 md:h-full">
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold">
-              Hi, I'm Joebert
+            <h1 className="text-4xl font-bold">
+              Hello,
             </h1>
-            <h3 className="text-md text-gray-500 dark:text-gray-400 font-semibold tracking-[0.020em]">Frontend<span className="px-2 text-xl text-gray-400 dark:text-gray-500">&bull;</span>Backend Developer</h3>
+            {/* <h3 className="text-md text-gray-500 dark:text-gray-400 font-semibold tracking-[0.020em]">Frontend<span className="px-2 text-xl text-gray-400 dark:text-gray-500">&bull;</span>Backend Developer</h3> */}
             <p className="text-gray-500 text-md dark:text-gray-400">
-              Currently, I am working as Sr. Full Stack Developer at <a href="https://webcast-inc.com.ph/" target="_blank" className="hover:underline underline-offset-4 decoration-dotted">Webcast Technologies, Inc.</a> 🐱‍🏍
+              Currently, I’m working as a Senior Developer at <a href="https://www.metrobank.com.ph/home" target="_blank" className="hover:underline underline-offset-4 decoration-dotted">Metrobank </a>🐱‍🏍, where I build and improve scalable software solutions that support the bank’s digital services and business operations.
             </p>
           </div>
           <div className="flex flex-col gap-4 md:flex-row">
@@ -35,7 +35,7 @@ const Banner = () => {
               <button className="w-full px-4 py-2 text-sm text-white bg-blue-500 shadow-lg rounded-xl hover:bg-blue-400 active:bg-blue-500">Let's Talk!</button>
             </a>
             <a
-              href="/assets/documents/JOE-BERT-SEMBRERO-2024-RESUME.pdf"
+              href="/assets/documents/JOE-BERT-SEMBRERO-2026-RESUME.pdf"
               download
               style={{ color: "inherit", textDecoration: "none" }}
             ><button className="w-full px-4 py-2 text-sm text-gray-600 border border-gray-400 border-dashed rounded-xl dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-slate-800 active:bg-gray-200 active:dark:bg-slate-900">Download Resume</button></a>
