@@ -41,6 +41,16 @@ const messages = [
       company: "/assets/logos/webcast.png",
     },
     message: `With the implementation he has done based on the project requirements, its clear that he goes beyond the boundaries of the requirement and finds the best way to go outside of the box for a more effective way of doing the project ask.\n\nIt was fun and easy working with him as I can communicate issues with him clearly which results to faster way on resolving system issues.`
+  },
+  {
+    name: "Isaac John Fonacie",
+    position: "Quality Assurance Analyst",
+    link: "https://www.linkedin.com/in/izkfonacier/",
+    image: {
+      person: "/assets/persons/zak.jpg",
+      company: "/assets/logos/tyler-tech.png",
+    },
+    message: "I've worked with Jobert on several frontend projects, and he's consistently delivered clean, and efficient. He's a reliable teammate, quick to adapt, and always great to collaborate with. Highly recommend him!"
   }
 ];
 
@@ -80,7 +90,7 @@ const Testimonials = () => {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {messages.map((item, index) => (
-          <div key={`testimonials-${index}`} className="transition duration-700 flex flex-col-reverse shadow-lg rounded-2xl py-4 px-6 space-y-4 bg-slate-50 dark:bg-slate-900 dark:shadow-xl box-border">
+          <div key={`testimonials-${index}`} className="transition duration-700 flex flex-col-reverse shadow-lg rounded-2xl py-4 pb-8 px-6 space-y-4 bg-slate-50 dark:bg-slate-900 dark:shadow-xl box-border">
             <div className="mt-6">
               <img
                 alt={`company-${index}`}
